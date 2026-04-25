@@ -97,6 +97,7 @@ h1, h2, h3, .section-title {
 /* feedback page */
 main{
    padding-top:100px;
+   margin:0 auto;
 }
 .feedback-form {
    padding:20px;
@@ -109,11 +110,23 @@ main{
     padding:5px;
     border-radius:15px;
     width:100%;
+    margin:0 auto;
+    margin-bottom: 25px;
     border:1px solid rgb(255, 255,255, 0.3);
     background:rgba(255,255,255,0.9);
     outline:none;
     color:#333;
     transition: 0.1s;
+    position:relative;
+    z-index:10;
+}
+.feedback-form__textarea{
+    cursor:text;
+
+}
+.feedback-form__select{
+    outline:none;
+    border-radius:15px;
 }
 .feedback-form__input--submit,.feedback-form__input--reset{
     width:20%;
@@ -141,10 +154,47 @@ main{
     
 }
 .success-page{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            color:aliceblue;
-            line-height: 50px;;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:aliceblue;
+    line-height: 50px;
+ }
+.feedback-page__title{
+    text-align: center;
+    color:aliceblue;
+    font:italic 40px fantasy;
+ }    
+.success-page__title{
+    font:italic 40px fantasy;
+}
+.success-page__paragraph{
+    font-size:25px;
+}
+
+
+
+
+
+ @media(max-width:768px){
+    main{
+        height: auto;
+       padding-top:100px;
+       padding-bottom: 40px;
+    }
+    .feedback-form{
+      width:90%;
+      padding:30px;
+      margin:0 auto;
+    }
+    .success-page__paragraph{
+      font-size:15px;
+    }
+    .feedback-form__label{
+        font-size:20px;
+    } 
+    
+    
+
  }
