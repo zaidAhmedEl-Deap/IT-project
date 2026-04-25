@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
 
     <div class="login__container">
 
+        
         <img 
             src="https://cdn-icons-png.flaticon.com/512/295/295128.png" 
             alt="login illustration" 
@@ -17,53 +18,58 @@
             width="150"
         >
 
+         
         <p class="login__welcome">
             Welcome back! Please login to your account
         </p>
 
+         
         <h2 class="login__title">Login</h2>
 
+         
         <form class="login__form">
-            <div>
-            <label class="login__label">Email</label>
-            </div>
-            <input 
-                type="email" 
-                required
-                placeholder=""
-                class="login__input login__input--email"
-            >
-            <div>
-            <label class="login__label">Password</label>
-            </div>
 
-            <div class="login__password-wrapper">
+            
+            <div class="login__field">
+                <label class="login__label">Email</label>
 
+                <div class="login__email-wrapper"></div>
                 <input 
-                    type="password" 
+                    type="email" 
                     required
-                    minlength="6"
                     placeholder=""
-                    class="login__input login__input--password"
+                    class="login__input login__input--email"
                 >
-
-                <button type="button" class="login__toggle">
-                    Show
-                </button>
-
             </div>
 
+             
+            <div class="login__field">
+                <label class="login__label">Password</label>
+
+                <div class="login__password-wrapper">
+
+                    <input 
+                        type="password" 
+                        required
+                        minlength="6"
+                        placeholder=""
+                        class="login__input login__input--password"
+                    >
+
+                    <button type="button" class="login__toggle">
+                        Show
+                    </button>
+
+                </div>
+            </div>
+
+             
             <div class="login__options">
 
                 <label class="login__remember">
                     <input type="checkbox" class="login__checkbox">
                     Remember Me
                 </label>
-
-                <a href="#" class="login__link login__link--forgot">
-                    Forgot Password?
-                </a>
-
             </div>
 
              
@@ -73,7 +79,6 @@
 
         </form>
 
-        
         <p class="login__signup">
             Don't have an account?
             <a href="#" class="login__link login__link--signup">
