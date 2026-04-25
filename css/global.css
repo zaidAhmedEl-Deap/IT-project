@@ -34,6 +34,7 @@ a {
 body {
     font-family: var(--font-primary);
     background-color: var(--bg-dark);
+    
 
    
 }
@@ -93,3 +94,26 @@ h1, h2, h3, .section-title {
     justify-content: space-between;
     
 }
+
+/* feedback page */
+.main__content {
+   padding-top:100px;
+}
+.feedback-form {
+   padding:20px;
+   margin:0 auto;
+   width:50%;
+   font-size:25px;
+   border-radius:15px;
+}
+.feedback-form__textarea,feedback-form__input{
+    padding:5px;
+    border-radius:15px;
+    width:100%;
+}
+.feedback-form__input--submit,.feedback-form__input--reset{
+    width:20%;
+    border-radius:15px;
+}
+
+
