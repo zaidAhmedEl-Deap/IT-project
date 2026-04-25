@@ -105,12 +105,46 @@ main{
    font-size:25px;
    border-radius:15px;
 }
-.feedback-form__textarea,feedback-form__input{
+.feedback-form__textarea,.feedback-form__input{
     padding:5px;
     border-radius:15px;
     width:100%;
+    border:1px solid rgb(255, 255,255, 0.3);
+    background:rgba(255,255,255,0.9);
+    outline:none;
+    color:#333;
+    transition: 0.1s;
 }
 .feedback-form__input--submit,.feedback-form__input--reset{
     width:20%;
     border-radius:15px;
+    font-weight:bold;
 }
+.feedback-form__input--submit:hover{
+    background-color:transparent;
+    color:aliceblue;
+    transform:translateY(-3px);
+}
+.feedback-form__input--submit:active{
+    background-color:#8B5A2B;
+    color:aliceblue;
+    
+}
+.feedback-form__input--reset:hover{
+    background-color:transparent;
+    color:aliceblue;
+    transform:translateY(-3px);
+}
+.feedback-form__input--reset:active{
+    background-color:#8B5A2B;
+    color:aliceblue;
+    
+}
+.success-page{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color:aliceblue;
+            line-height: 50px;;
+ }
