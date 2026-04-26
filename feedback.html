@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/feedback-style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        .feedback-form{
+           background-image:linear-gradient(rgba(0,0,0,0.6)),url(https://images.unsplash.com/photo-1706759755820-0dbc35c19959?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+           background-size:cover;
+           
+           color:white;
+        }
+    </style> 
+
+</head>
+<body>
+    <!-- header start -->
+    <header>
+                <!-- block -->
+        <div class="navbar">
+
+            <nav class="navbar__nav">
+
+                <img src="./assets/images/demons-souls-ps3-1 (2).jpg" alt="Logo" class="navbar__logo">
+                <ul class="navbar__links-list">
+
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">Home</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link ">Compare</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">Details</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link navbar__link--size">contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="feedback.html" class="navbar__link navbar__link--size" title="go to feedback">Feedback</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__addtional-container">
+                    <div class="navbar__addtional-login-btn">
+                        <button class="navbar__login-btn">Sign-in</button>
+                    </div>
+                
+                    <div class="navbar__addtional-select">
+                        <select class="navbar__select" id="themeselect">
+
+                            <option value="default">Default</option>
+                            <option value="dark">Dark</option>
+                  
+                        </select>
+                    </div>
+                
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+
+    <main class="feedback-page">
+      <section class="feedback-page__container">
+       <h2 class="feedback-page__title">We'd Love Your Feedback! </h2>
+       <br> 
+       <form method="post" action="success.html" class="feedback-form">
+        <div  class="feedback-form__group">
+         <label for="game" class="feedback-form__label">Choose a game</label> 
+         <select id="game" name="game" required class="feedback-form__select">
+          <option value="" class="feedback-form__option">Choose</option>
+          <option value="1" class="feedback-form__option">game 1</option>
+          <option value="2" class="feedback-form__option">game 2</option>
+          <option value="3" class="feedback-form__option">game 3</option>
+          <option value="4" class="feedback-form__option">game 4</option>
+          <option value="5" class="feedback-form__option">game 5</option>
+          <option value="6" class="feedback-form__option">game 6</option>
+          <option value="7" class="feedback-form__option">game 7</option>
+          <option value="8" class="feedback-form__option">game 8</option>
+         </select>
+        </div>  
+        <br>
+        <div  class="feedback-form__group">
+         <label for="pros" class="feedback-form__label">Pros</label>
+         <br>
+         <textarea name="pros" cols="40" rows="3" id="pros" placeholder="Enter the pros of this game" required class="feedback-form__textarea"></textarea>
+        </div>
+        <br>
+        <div  class="feedback-form__group">   
+         <label for="cons" class="feedback-form__label">Cons</label>
+         <br>
+         <textarea name="cons" cols="40" rows="3" id="cons" placeholder="Enter the cons of this game" required class="feedback-form__textarea"></textarea>  
+        </div>
+        <br>
+        <div class="feedback-form__group">
+         <input type="submit" value="Submit" class="feedback-form__input feedback-form__input--submit">
+         <input type="reset" value="Reset" class="feedback-form__input feedback-form__input--reset" >
+        </div>
+       </form>       
+     </section>
+    </main>
+    <!-- main end -->
+
+    <script src="./Js/main.js"></script>
+    
+    <br>
+    <footer>
+     
+    </footer>
+</body>
+</html>
