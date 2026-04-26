@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Template</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
-<body>
+
+<body class="layout-horizontal">
     <!-- header start -->
     <header>
-                <!-- block -->
+        <!-- block -->
         <div class="navbar">
 
             <nav class="navbar__nav">
-
-                <img src="./assets/images/demons-souls-ps3-1 (2).jpg" alt="Logo" class="navbar__logo">
-                <ul class="navbar__links-list">
-
-
-                    <li class="navbar__item">
-                        <a href="" class="navbar__link">Home</a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a href="" class="navbar__link ">Compare</a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a href="" class="navbar__link">Details</a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a href="" class="navbar__link navbar__link--size">contact</a>
-                    </li>
-                </ul>
-
-                <div class="navbar__addtional-container">
-                    <div class="navbar__addtional-login-btn">
-                        <button class="navbar__login-btn">Sign-in</button>
+                <div class="navbar__top">
+                    <div class="navbar__sub-title-container">
+                        <h5 class="navbar__sub-title">Gaming web</h5>
                     </div>
-                
-                    <div class="navbar__addtional-select">
-                        <select class="navbar__select" id="themeselect">
-
-                            <option value="default">Default</option>
-                            <option value="dark">Dark</option>
-                  
+                    <div class="navbar__login">
+                        <a href="./login.html" class="navbar__link  navbar__link--login">login</a>
+                    </div>
+                </div>
+                <div class="navbar__mid">
+                    <div class="navbar__title-container">
+                        <h1 class="navbar__title">Souls borne</h1>
+                    </div>
+                    <div class="navbar__search">
+                        <input type="text" placeholder="Search" id="search" class="navbar__search-input">
+                        <button class="navbar__search-btn">
+                        <i class="fa-solid fa-magnifying-glass navbar__search-icon" ></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="navbar__bottom">
+                    <ul class="navbar__links-list">
+                        <li class="navbar__item "><a href="" class="navbar__link">Home</a></li>
+                        <li class="navbar__item"><a href="./topics.html" class="navbar__link  ">Topics</a></li>
+                        <li class="navbar__item"><a href="./LeaderBoard.html" class="navbar__link  ">Leader board</a></li>
+                        <li class="navbar__item"><a href="./system-Requirements.html" class="navbar__link">System Requirements</a></li>
+                        <li class="navbar__item"><a href="" class="navbar__link">Feedback</a></li>
+                        <li class="navbar__item"><a href="" class="navbar__link">Contact-us</a></li>
+                      
+                    </ul>
+                      
+                        <div class="navbar__theme">
+                            <label for="" class="navbar__theme-label">Themes</label>
+                            <select name="" id="layout-switcher" class="navbar__theme-select">
+                                <option value="horizontal">Horizontal</option>
+                                <option value="side">sidebar</option>
+                                
                             </select>
-                  </div>
-                
-              </div>
+                         </div>
+                       
+                   
+                </div>
             </nav>
         </div>
     </header>
@@ -68,10 +76,11 @@
     <!-- main end -->
 
     <script src="./Js/main.js"></script>
-    
-    
+
+
     <footer>
 
     </footer>
 </body>
+
 </html>
