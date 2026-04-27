@@ -1,7 +1,15 @@
 :root {
     /* fonts start */
-    --font-primary: 'Inter', sans-serif;
-    --font-heading: 'Montserrat', sans-serif;
+    /* lora font start */
+    --font-secondary: "Lora", serif;
+    --lora-weight-r: 400;
+    --lora-weight-m: 500;
+    /* lora font start */
+
+
+
+    --font-size-navbar: 1rem;
+    --font-primary: "Cinzel Decorative", serif;
     /* fonts start */
 
     /* colors start */
@@ -47,6 +55,17 @@ ul {
     list-style: none;
 }
 
+/* standered styling  */
+h1 ,h2, h3, h4, h5, .navbar__link, .navbar__theme-label, .navbar__search-link,
+.section-title, .navbar__sub-title, .navbar__link--login
+{
+
+    font-family: var(--font-primary);
+    font-size: var();
+
+
+}
+
 a {
     text-decoration: none;
 }
@@ -55,8 +74,9 @@ a {
 
 
 body {
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
     background-color: var(--bg-dark);
+    font-weight: var(--lora-weight-r);
 
 
 
@@ -64,15 +84,18 @@ body {
 
 
 
-h1,
-h2,
-h3,
-.section-title {
-  font-family: "Noto Sans Math", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+h1
+,
+.section-title, .navbar__sub-title, .navbar__link--login {
+ 
+  font-family: var(--font-heading) ;
+  
 
 }
+ .navbar__sub-title, .navbar__link--login {
+
+    font-size: 1rem;
+ }
 
 /*header start*/
 header {
@@ -116,11 +139,13 @@ header {
     display: none !important;
 }
 
-.navbar__sub-title {
+.navbar__sub-title, .navbar__link--login {
+
 
     color: var(--text-secondry);
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+    
 
 }
 
@@ -144,7 +169,7 @@ header {
 .navbar__search-link {
 
     color: var(--accent-gold);
-    font-weight: bold;
+ 
 }
 
 .menu-icon {
@@ -193,9 +218,13 @@ header {
     color: var(--text-secondry);
     font-weight: bold;
     transition: all 0.2s ease;
-    text-transform: uppercase;
+   
     font-size: 14px;
-}
+    text-transform: none !important; 
+    font-weight: 400 !important;
+   
+}   
+
 
 
 
@@ -496,7 +525,10 @@ header {
     margin-right: 1.5rem;
 }
 
+.layout-sidebar .navbar__search, .layout-sidebar .navbar__top {
 
+    display: none;
+}
 
 
 

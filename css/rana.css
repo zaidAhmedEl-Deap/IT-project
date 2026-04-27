@@ -1,104 +1,3 @@
-
-:root {
-    
-    --font-primary: 'Inter', sans-serif;
-    --font-heading: 'Montserrat', sans-serif;
-
-    --bg-dark: #161733;
-     --accent-gold: #c39858;
-     --highlight-gold: #d8c18f;
-     --card-blue: #32385a;
-     --dark-accent: #392318;
-
-    }
-
-
-* {
-
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-ul {
-
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-
-
-body {
-    font-family: var(--font-primary);
-    background-color: var(--bg-dark);
-
-   
-}
-
-
-h1, h2, h3, .section-title {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    text-transform: uppercase; 
-}
-
-.navbar {
- position: fixed; 
- height: 100px;
- width: 100%;
- 
- 
-}
-
-.navbar__nav {
-
-    display: flex;
-    background-color: var(--gold-accent);
-    
-    
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: solid 1px #ccc;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.navbar__logo {
-
-    width: 200px;
-    margin: 4px;
-    
-}
-
-.navbar__links-list {
-
-    display: flex;
-    
-    padding: 10px;
-
-}
-.navbar__link {
-
-    color: var(--highlight-gold);
-    font-weight: 500;
-    padding: 0 10px;
-}
-.navbar__addtional-container {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-main {
-
-    padding-top: 80px;
-}
-
 .contact__container {
 
     display: flex;
@@ -108,10 +7,10 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-   
+
 }
 
-.contact__title{
+.contact__title {
 
     color: #ffffff;
     text-align: center;
@@ -166,7 +65,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     font-size: 1.4rem;
-} 
+}
 
 .contact-form__choose {
 
@@ -180,15 +79,16 @@ main {
     border: 3px solid var(--highlight-gold);
     border-radius: 15px;
     transition: 0.3s;
-    cursor: pointer;   
+    cursor: pointer;
 }
+
 .contact-form__label:hover {
 
     background: var(--card-blue);
     transform: scale(1.03);
 }
 
-.contact-form__choose:checked + .contact-form__label {
+.contact-form__choose:checked+.contact-form__label {
 
     background: var(--accent-gold);
     transform: scale(1.03);
@@ -241,7 +141,7 @@ aside {
     flex: 1;
     display: flex;
     justify-content: center;
-    height: auto;   
+    height: auto;
 }
 
 .contact__img {
@@ -259,7 +159,8 @@ aside {
         align-items: center;
     }
 
-    .contact__form, aside {
+    .contact__form,
+    aside {
 
         width: 100%;
     }
@@ -269,4 +170,3 @@ aside {
         flex-direction: column;
         gap: 10px;
     }
-
