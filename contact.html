@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/rana.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600;800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <!-- block -->
+        <div class="navbar">
+
+            <nav class="navbar__nav">
+
+                <img src="./assets/images/demons-souls-ps3-1 (2).jpg" alt="Logo" class="navbar__logo">
+                <ul class="navbar__links-list">
+
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">Home</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link ">Compare</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">Details</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link navbar__link--size">contact</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__addtional-container">
+                    <div class="navbar__addtional-login-btn">
+                        <button class="navbar__login-btn">Sign-in</button>
+                    </div>
+
+                    <div class="navbar__addtional-select">
+                        <select class="navbar__select" id="themeselect">
+
+                            <option value="default">Default</option>
+                            <option value="dark">Dark</option>
+
+                        </select>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+
+    <main class="main__contact">
+        <section class="contact">
+            <div class="contact__container">
+                <h1 class="contact__title">Contact Us</h1>
+                <p class="contact__paragraph">We're here to help you navigate through every level. Drop us a message and
+                    we'll get back to you faster than a speedrun.</p>
+
+                <form class="contact__form">
+                    <h3 class="contact-form__title">Contact Information</h3>
+                    <div class="contact-form__row">
+                        <input type="text" class="contact-form__input" placeholder="First Name" required>
+                        <input type="text" class="contact-form__input" placeholder="Last Name" required>
+                    </div>
+                    <div class="contact-form__row">
+                        <input type="email" class="contact-form__input" placeholder="Your Email" required>
+                        <input type="tel" class="contact-form__input" placeholder="Your Phone Number" required>
+                    </div> 
+
+                   
+                    <h3 class="contact-form__title">Choose the subject of your request?</h3>
+                    <div class="contact-form__option">
+
+                            <input type="radio" id="support" class="contact-form__choose" name="subject" value="support">
+                            <label for="support" class="contact-form__label">Support</label>
+
+                            <input type="radio" id="solutions" class="contact-form__choose" name="subject" value="solutions">
+                            <label for="solutions" class="contact-form__label">Solutions</label>
+
+                            <input type="radio" id="general-inquiry" class="contact-form__choose" name="subject" value="general inquiry">
+                            <label for="general-inquiry" class="contact-form__label">General Inquiry</label>
+
+                            <input type="radio" id="other" class="contact-form__choose" name="subject" value="other">
+                            <label for="other" class="contact-form__label">Other</label>
+                    </div>
+                    
+
+                    <h3 class="contact-form__title">How can we help you?</h3>
+                    <textarea class="contact-form__textarea" placeholder="Your message" rows="4"></textarea>
+                    <div class="contact-form__buttons">
+                        <button type="submit" class="contact-form__button">Submit</button>
+                        <button type="reset" class="contact-form__button">Reset</button>
+                    </div>
+                </form>
+
+                <aside>
+                    <img src="/assets/images/contact.jpg" alt="Contact Image" class="contact__img">
+                </aside>
+            </div>
+        </section>
+    </main>
+    <!-- main end -->
+
+    <script src="./Js/main.js"></script>
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
