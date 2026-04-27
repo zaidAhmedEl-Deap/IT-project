@@ -93,3 +93,6 @@ h1, h2, h3, .section-title {
     justify-content: space-between;
     
 }
+main {
+    padding-top: 100px;
+}
