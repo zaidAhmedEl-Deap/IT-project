@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="css/feedback-style.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
     
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- header start -->
@@ -37,6 +40,9 @@
                     <li class="navbar__item">
                         <a href="" class="navbar__link navbar__link--size">contact</a>
                     </li>
+                    <li class="navbar__item">
+                        <a href="feedback.html" class="navbar__link navbar__link--size" title="go to feedback">Feedback</a>
+                    </li>
                 </ul>
 
                 <div class="navbar__addtional-container">
@@ -50,10 +56,10 @@
                             <option value="default">Default</option>
                             <option value="dark">Dark</option>
                   
-                            </select>
-                  </div>
+                        </select>
+                    </div>
                 
-              </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -61,16 +67,29 @@
 
     <!-- main start -->
 
-    <main class="main__content">
-      
+    <main class="success-page">
+      <section class="success-page__container">
+        <div class="success-page__group">
+          <h2 class="success-page__title">Thank You!</h2>
+        </div>
+        <div class="success-page__group" style="font-size: 100px; color:#28a745; margin-bottom: 20px;">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="success-page__group">
+        <p class="success-page__paragraph">Thanks a bunch for filling that out.</p>
+        <p class="success-page__paragraph">It means a lot to us, just like you do!</p> 
+        <p class="success-page__paragraph">We really appreciate you giving us a moment of your time today.</p>
+        <p class="success-page__paragraph">Thanks for being you.</p>
+        </div>  
+      </section>
     </main>
     <!-- main end -->
 
     <script src="./Js/main.js"></script>
     
-    
+    <br>
     <footer>
-
+      
     </footer>
 </body>
 </html>
