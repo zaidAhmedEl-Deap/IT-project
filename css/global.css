@@ -89,8 +89,65 @@
     list-style: none;
 }
 
+<<<<<<< HEAD
 .sidebar__item {
     margin-bottom: 15px;
+=======
+a {
+    text-decoration: none;
+}
+
+
+
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-dark);
+    
+
+   
+}
+
+
+h1, h2, h3, .section-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    text-transform: uppercase; 
+}
+
+.navbar {
+ position: fixed; 
+ height: 100px;
+ width: 100%;
+ 
+ 
+}
+
+.navbar__nav {
+
+    display: flex;
+    background-color: var(--gold-accent);
+    
+    
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ccc;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.navbar__logo {
+
+    width: 200px;
+    margin: 4px;
+    
+}
+
+.navbar__links-list {
+
+    display: flex;
+    
+>>>>>>> 0e0755292f5760414e1d5f06b0dc73e3746f2a78
     padding: 10px;
     border-radius: 4px;
     transition: 0.3s;
@@ -188,6 +245,13 @@
     padding: 0;
     font-family: Arial, sans-serif;
     
+<<<<<<< HEAD
     /* إضافة طبقة تعتيم خفيفة عشان الكلام يبان بوضوح */
     color: white; 
 }*/
+=======
+}
+main {
+    padding-top: 100px;
+}
+>>>>>>> 0e0755292f5760414e1d5f06b0dc73e3746f2a78
