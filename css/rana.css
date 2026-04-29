@@ -50,7 +50,7 @@
 }
 
 .contact-form__input {
- 
+
     font-family: var(--font-secondery);
     background-color: var(--bg-secondary);
     color: #ccc;
@@ -77,7 +77,7 @@
 }
 
 .contact-form__label {
- 
+
     color: var(--highlight);
     display: inline-block;
     padding: 4px 8px;
@@ -86,7 +86,7 @@
     cursor: pointer;
 }
 
-.contact-form__choose:checked + .contact-form__label {
+.contact-form__choose:checked+.contact-form__label {
 
     background: var(--Headings-gold);
     transform: scale(1.03);
@@ -95,7 +95,7 @@
 
 .contact-form__textarea {
 
-    
+
     font-family: var(--font-secondery);
     background-color: var(--bg-secondary);
     color: #ccc;
