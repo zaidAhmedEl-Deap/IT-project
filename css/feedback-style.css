@@ -49,6 +49,7 @@
     padding-right: var(--btn-padding-x);
     width: var(--btn--width);
     border-radius: var(--btn-radius);
+    font-family: var(--font-primary);
     
 }
 
