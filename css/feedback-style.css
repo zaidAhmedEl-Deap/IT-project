@@ -3,22 +3,25 @@
 
     --form-text-color:aliceblue;
     --form-placeholder:#333;
-    --border-radius:15px;
+    
 }
 
 .feedback-form {
-    padding: 20px;
+    padding-left: var(--form-padding-x);
+    padding-right: var(--form-padding-x);
     margin: 0 auto;
-    width: 90%;
+    width: 70%;
     font-size: 25px;
-    border-radius: var(--border-radius);
+    border-radius: var(--form-radius);
+    gap: var(--form-gap)
+}
+::placeholder{
+    font-family:var(--font-primary);
 }
 
-.feedback-form__textarea,
-.feedback-form__input {
+.feedback-form__textarea {
     padding: 5px;
-    border-radius: var(--border-radius);
-    width: 100%;
+    border-radius: var(--form-radius);
     margin: 0 auto;
     margin-bottom: 25px;
     border: 1px solid rgb(255, 255, 255, 0.3);
@@ -28,23 +31,25 @@
     transition: 0.1s;
     position: relative;
     z-index: 10;
-}
-
-.feedback-form__textarea {
     cursor: text;
-
+    width:var( --form-input-width);
+    resize:none;
 }
-
 .feedback-form__select {
     outline: none;
-    border-radius: var(--border-radius);
+    border-radius: var(--form-radius);
 }
 
 .feedback-form__input--submit,
 .feedback-form__input--reset {
-    width: 20%;
-    border-radius: var(--border-radius);
     font-weight: bold;
+    margin: var(--btn-margin);
+    padding: var(--btn--padding);
+    padding-left: var(--btn-padding-x);
+    padding-right: var(--btn-padding-x);
+    width: var(--btn--width);
+    border-radius: var(--btn-radius);
+    
 }
 
 .feedback-form__input--submit:hover {
@@ -73,7 +78,7 @@
 .feedback-page__title {
     text-align: center;
     color: var(--theme1-bg-secondary);
-    font:50px var(--font-secondary);
+    font:50px var(--font-primary);
 }
 /* Feedback page end */
 
@@ -101,7 +106,7 @@
     
 
     .feedback-form {
-        width: 95%;
+        width: 100%;
         padding: 30px;
         margin: 0 auto;
     }
