@@ -1,4 +1,31 @@
 :root {
+    /* navbar start  */
+
+    /*theme 1 start*/
+    /* theme1 colors start */
+    --theme1-bg-secondary: #070812;
+    --theme1-Headings-gold: #d8c18f;
+    --theme1-bg-primary: #32385a;
+    --theme1-text-primary: #B7C5E1;
+    --theme1-text-secondry: #61709B;
+    --theme1-highlight: #915a08;
+    /*theme1 colors end */
+
+    /*theme 2 start*/
+    /*theme2 colors start */
+    --theme2-bg-primary: #CC983B;
+    --theme2-Headings: #5E2A0B;
+    --theme2-bg-secondry: #E8C049;
+    --theme2-text-primary: #1A0604;
+    --theme2-bars-bg: #300b08;
+    --theme2-text-secondry: #61709B;
+    --theme2-highlight: #968b7e;
+    /*theme2 colors end */
+    /* navbar end  */
+
+
+
+
     /* fonts start */
     /* lora font start */
     --font-secondary: "Lora", serif;
@@ -17,10 +44,10 @@
     /* fonts size start */
     --font-size-navbar: 1rem;
     --font-body: 1.125rem;
-    --font-h1: 3rem;
-    --font-h2: 2rem;
-    --font-h3: 1.75rem;
-    --font-h4: 1.5rem;
+    --font-h1: 2.5rem;
+    --font-h2: 1.75rem;
+    --font-h3: 1.5rem;
+    --font-h4: 1.2rem;
     --font-small: 0.875rem;
     /* fonts size start */
 
@@ -47,15 +74,6 @@
 
     /*design system*/
 
-    /*theme 1 start*/
-    /* theme1 colors start */
-    --theme1-bg-secondary: #070812;
-    --theme1-Headings-gold: #d8c18f;
-    --theme1-bg-primary: #32385a;
-    --theme1-text-primary: #B7C5E1;
-    --theme1-text-secondry: #61709B;
-    --theme1-highlight: #915a08;
-    /*theme1 colors end */
 
     /*theme 1 Form Colors */
     --form-bg: var(--theme1-bg-secondary);
@@ -77,18 +95,6 @@
     /* المسافة بين كل input والتاني */
     /*theme 1 end*/
 
-    /*theme 2 start*/
-    /*theme2 colors start */
-    --theme2-bg-primary: #CC983B;
-    --theme2-Headings: #5E2A0B;
-    --theme2-bg-secondry: #E8C049;
-    --theme2-text-primary: #1A0604;
-    --theme2-bars-bg: #300b08;
-    --theme2-text-secondry: #61709B;
-    --theme2-highlight: #968b7e;
-    /*theme2 colors end */
-
-
 
     /*layout start*/
     --navbar-width: 100%;
@@ -102,6 +108,28 @@
     --content-margin-top: 9rem;
     --content-margin-left: auto;
     /*layout end*/
+
+
+
+    /* team work  */
+    --bg-secondary: #070812;
+    --Headings-gold: #d8c18f;
+    --bg-primary: #32385a;
+    --text-primary: #B7C5E1;
+    --text-secondry: #61709B;
+    --highlight: #915a08;
+    /* team work  */
+}
+
+body.layout-sidebar {
+
+    --bg-primary: #CC983B;
+    --Headings: #5E2A0B;
+    --bg-secondary: #E8C049;
+    --text-primary: #1A0604;
+    --bars-bg: #300b08;
+    --text-secondary: #61709B;
+    --highlight: #968b7e;
 }
 
 

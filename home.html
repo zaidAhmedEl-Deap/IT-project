@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topics</title>
+    <title>Home</title>
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-
+    
+    
     <link rel="stylesheet" href="./css/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/home.css">
 
-    <link rel="stylesheet" href="./css/testing.css">
 
 </head>
 
@@ -173,81 +173,39 @@
 
     <main class="main__content">
         <div class="main__content-container">
-            <div class="login__container">
 
-                <h1 class="login__welcome">
-                    Welcome back! Please login to your account
-                </h1>
+            <section class="search">
+                <input type="text" class="search__input" placeholder="Search ..." id="search-focus">
+            </section>
 
+            <article class="text-section">
+                <h1 class="text-section__title">Ready to explore <br>souls borne games?!</h1>
+            </article>
 
-                <h2 class="login__title">Login</h2>
+            <div class="info-card">
+                <p class="info-card__text">
+                    Your ultimate guide to the Soulsborne universe. We provide in-depth game comparisons, system requirements, and a community space for fans to share their feedback. Whether you are a hollow seeking guidance or a seasoned hunter, you’ll find everything you need here.
+                </p>
+            </div>
 
-                <div class="login__form-container">
-                    <form class="login__form">
-
-
-                        <div class="login__field">
-                            <label class="login__label">Email</label>
-
-                            <div class="login__email-wrapper"></div>
-                            <input type="email" required placeholder="" class="login__input login__input--email">
-                        </div>
-
-
-                        <div class="login__field">
-                            <label class="login__label">Password</label>
-
-                            <div class="login__password-wrapper">
-
-                                <input type="password" required minlength="6" placeholder=""
-                                    class="login__input login__input--password">
-
-                                <button type="button" class="login__toggle">
-                                    Show
-                                </button>
-
-                            </div>
-                        </div>
-
-
-                        <div class="login__options">
-
-                            <label class="login__label">
-                                <input type="checkbox" class="login__checkbox">
-                                Remember Me
-                            </label>
-                        </div>
-
-
-                        <button class="login__btn login__toggle">
-                            Sign In
-                        </button>
-
-                        <p class="login__signup">
-                            Don't have an account?
-                            <a href="./signup.html" class="login__link login__link--signup">
-                                Sign Up
-                            </a>
-                        </p>
-
-                    </form>
-                </div>
-
-
+            <div class="video-container">
+                <video controls poster="assets/images/demon-souls.jpg">
+                   <source src="./assets/video/home-video.mp4" type="video/mp4">
+                </video>
             </div>
 
         </div>
     </main>
-
+    </div>
     <!-- main end -->
 
 
 
 
     <footer>
-        <p class="footer__copyright">IT Team يارب نعدي &copy; </p>
+                <p class="footer__copyright">IT Team  يارب نعدي  &copy; </p>
     </footer>
     <script src="./Js/main.js"></script>
 </body>
 
-</html>
+</html>              

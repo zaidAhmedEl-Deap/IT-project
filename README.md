@@ -12,6 +12,18 @@ project about gaming
 4. [العناصر المحجوزة (Global IDs)](#-العناصر-المحجوزة)
 5. [طريقة العمل للفريق (Git Workflow)](#-طريقة-العمل)
 
+### template file & testing فايل
+- شباب انا عامل الفايلين دول عشان نحاكي الشغل انا هنا حاكيت الشغل علي صفحه اللوجن عايزكو تاخدو الانطباع 
+
+### مطلوب منكم الشغل بناء علي ثيمين مختلفين 
+
+
+
+
+
+
+
+
 ## 🛠 قواعد التكويد
 
 ### 1️⃣ منهجية BEM (CSS)
@@ -28,37 +40,13 @@ project about gaming
 ## Design system
 
 ### الألوان الأساسية
-   /* theme1 colors start */
-    --theme1-bg-secondry: #070812;
-    الخلفيه الثانويه للموقع للزرارير ولل input
-    --theme1-Headings-gold: #d8c18f;
-    ده للعناونين 
-    --theme1-bg-primary: #32385a;
-    الخلفيه الاساسيه للثيم الاولي
-    --theme1-text-primary: #B7C5E1;
-    ده الاساسي للتيكست والبارجراف وهكذا
-    --theme1-text-secondry: #61709B;
-    //ده لون الخط الثانوي 
-    --theme1-highlight: #915a08;
-    ده لاي حاجه مميزه في الصفحه 
-    /*theme1 colors end */
-
-
-    --theme2-bg-primary: #CC983B;
-    الاساسي 
-    --theme2-Headings: #5E2a0b;
-    ده للعناوين 
-    --theme2-bg-secondry: #E8C049;
-    ده خلفيه ثانويه للناف بار
-    --theme2-text-primary: #1A0604;
-    //
-    --theme2-bars-bg: #300b08;
-    ده للناف بار
-    --theme2-text-secondry: #61709B;
-    //ده بنستخدمه في الهوفر مثلا لون ثانوي بنميز بيه العنصر
-    --theme2-highlight: #968b7e;
-    // ده للحاجات المميزه في الصفحه 
-    /*theme2 colors end */
+    --bg-secondary: #070812;
+    --Headings-gold: #d8c18f;
+    --bg-primary: #32385a;
+    --text-primary: #B7C5E1;
+    --text-secondry: #61709B;
+    --highlight: #915a08;
+   - في الثيم التانيه هتتغير الالوان تلقائيا 
 
 
 ### الخطوط
