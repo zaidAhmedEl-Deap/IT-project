@@ -12,7 +12,7 @@
 
 .contact__title {
 
-    color: #ffffff;
+    color: var(--theme1-Headings-gold);
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@
 
 .contact-form__option {
 
-    color: var(--highlight-gold);
+    color: var(--theme1-highlight);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -170,3 +170,4 @@ aside {
         flex-direction: column;
         gap: 10px;
     }
+}
