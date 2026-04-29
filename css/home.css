@@ -158,8 +158,8 @@
 
 
 body {
-    /* مسار الصورة */
-    background-image: url('dark-souls-bonfire-3840x2160-18682.jpg'); 
+   
+    background-image: url('/assets/images/dark-souls-bonfire-3840x2160-18682.jpg'); 
 
     /* تخلي الصورة تغطي الشاشة بالكامل مهما كان حجم الشاشة */
     background-size: cover; 
