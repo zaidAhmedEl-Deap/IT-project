@@ -1,25 +1,30 @@
-/* feedback page */
+/* Feedback page start */
+:root{
 
+    --form-text-color:aliceblue;
+    --form-placeholder:#333;
+    --border-radius:15px;
+}
 
 .feedback-form {
     padding: 20px;
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
     font-size: 25px;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 .feedback-form__textarea,
 .feedback-form__input {
     padding: 5px;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     width: 100%;
     margin: 0 auto;
     margin-bottom: 25px;
     border: 1px solid rgb(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.9);
     outline: none;
-    color: #333;
+    color: var(--form-placeholder);
     transition: 0.1s;
     position: relative;
     z-index: 10;
@@ -32,76 +37,71 @@
 
 .feedback-form__select {
     outline: none;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 .feedback-form__input--submit,
 .feedback-form__input--reset {
     width: 20%;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     font-weight: bold;
 }
 
 .feedback-form__input--submit:hover {
     background-color: transparent;
-    color: aliceblue;
+    color: var(--form-text-color);
     transform: translateY(-3px);
 }
 
 .feedback-form__input--submit:active {
-    background-color: #8B5A2B;
-    color: aliceblue;
+    background-color:var(--theme1-highlight);
+    color: var(--form-text-color);
 
 }
 
 .feedback-form__input--reset:hover {
     background-color: transparent;
-    color: aliceblue;
+    color: var(--form-text-color);
     transform: translateY(-3px);
 }
 
 .feedback-form__input--reset:active {
-    background-color: #8B5A2B;
-    color: aliceblue;
+    background-color:var(--theme1-highlight);
+    color: var(--form-text-color);
 
 }
+.feedback-page__title {
+    text-align: center;
+    color: var(--theme1-bg-secondary);
+    font:50px var(--font-secondary);
+}
+/* Feedback page end */
 
-.success-page {
+/* Success page start */
+.success-page__container{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: aliceblue;
     line-height: 50px;
 }
-
-.feedback-page__title {
-    text-align: center;
-    color: aliceblue;
-    font: italic 40px fantasy;
+.success-page__title{
+    font:50px var(--font-primary);
+    color: var(--theme1-bg-secondary);
 }
-
-.success-page__title {
-    font: italic 40px fantasy;
-}
-
 .success-page__paragraph {
-    font-size: 25px;
-}
+    font:20px var(--font-secondary);
+    line-height: 40px;
+}   
 
-
-
+/*Success page end */
 
 
 @media(max-width:768px) {
-    main {
-        height: auto;
-        padding-top: 100px;
-        padding-bottom: 40px;
-    }
+    
 
     .feedback-form {
-        width: 90%;
+        width: 95%;
         padding: 30px;
         margin: 0 auto;
     }
