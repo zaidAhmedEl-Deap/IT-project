@@ -11,9 +11,10 @@
     padding-right: var(--form-padding-x);
     margin: 0 auto;
     width: 70%;
-    font-size: 25px;
+    font-size:25px;
     border-radius: var(--form-radius);
     gap: var(--form-gap)
+    
 }
 ::placeholder{
     font-family:var(--font-primary);
@@ -38,8 +39,12 @@
 .feedback-form__select {
     outline: none;
     border-radius: var(--form-radius);
+    font-family: var(--font-primary);
 }
-
+.feedback-form__option{
+    font-family:var(--font-primary);
+   
+}
 .feedback-form__input--submit,
 .feedback-form__input--reset {
     font-weight: bold;
@@ -52,11 +57,32 @@
     font-family: var(--font-primary);
     
 }
+.feedback-form__input--submit:visited{
+    font-weight: bold;
+    margin: var(--btn-margin);
+    padding: var(--btn--padding);
+    padding-left: var(--btn-padding-x);
+    padding-right: var(--btn-padding-x);
+    width: var(--btn--width);
+    border-radius: var(--btn-radius);
+    font-family: var(--font-primary);
+    
+}
+.feedback-form__input--reset:visited {
+    font-weight: bold;
+    margin: var(--btn-margin);
+    padding: var(--btn--padding);
+    padding-left: var(--btn-padding-x);
+    padding-right: var(--btn-padding-x);
+    width: var(--btn--width);
+    border-radius: var(--btn-radius);
+    font-family: var(--font-primary);
+}    
 
 .feedback-form__input--submit:hover {
     background-color: transparent;
     color: var(--form-text-color);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .feedback-form__input--submit:active {
@@ -68,7 +94,7 @@
 .feedback-form__input--reset:hover {
     background-color: transparent;
     color: var(--form-text-color);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .feedback-form__input--reset:active {
@@ -81,26 +107,10 @@
     color: var(--theme1-bg-secondary);
     font:50px var(--font-primary);
 }
+
 /* Feedback page end */
 
-/* Success page start */
-.success-page__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    line-height: 50px;
-}
-.success-page__title{
-    font:50px var(--font-primary);
-    color: var(--theme1-bg-secondary);
-}
-.success-page__paragraph {
-    font:20px var(--font-secondary);
-    line-height: 40px;
-}   
 
-/*Success page end */
 
 
 @media(max-width:768px) {
@@ -111,13 +121,12 @@
         padding: 30px;
         margin: 0 auto;
     }
-
-    .success-page__paragraph {
-        font-size: 15px;
-    }
-
     .feedback-form__label {
         font-size: 20px;
+    }
+    .feedback-page__title{
+        font-size:30px;
+        
     }
 
 
