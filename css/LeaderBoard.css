@@ -1,37 +1,97 @@
+section {
+
+
+    border: 1px solid var(--highlight);
+    padding: 1.5rem 1rem;
+    border-radius: 4px;
+}
+
 .Leader-Board {
     text-align: center;
     margin-bottom: 20px;
+    color: var(--Headings-gold);
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 0.5rem;
 }
+
+/* styling leader bord headers */
+.ratings__title,
+.lore__title,
+.art-direction__title,
+.exploration__title,
+.gameplay__title,
+.variety__title,
+.bosses__title,
+.downloads__title {
+
+    color: var(--highlight);
+}
+
+
 /* leader board with same style */
-[class$="__list"] {
+.ratings__list,
+.lore__list,
+.exploration__list,
+.art-direction__list,
+.gameplay__list,
+.variety__list,
+.bosses__list,
+.downloads__list {
     padding: 0;
     margin: 15px 0;
     margin-bottom: 40px;
+    background-color: var(--bg-secondary);
+
+    border-top: 2px solid var(--Headings-gold);
+    border-radius: 5px;
 }
 
+
 /* style for each item in list */
-    [class$="__item"] {
-        list-style-position: inside;
-        display: flex;
-        align-items: center;
-        padding: 8px 0;
-        border-bottom: 1px solid currentColor;
-        justify-content: center;
-    }
+.ratings__item,
+.lore__item,
+.art-direction__item,
+.exploration__item,
+.gameplay__item,
+.variety__item,
+.bosses__item,
+.downloads__item {
+    list-style-position: inside;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid currentColor;
+    justify-content: center;
+    color: var(--text-primary);
+}
+
+.list__firstplace {
+    background-color: var(--highlight);
+    color: var(--bg-secondary);
+    box-shadow: inset 1px 1px 0 0 rgba(109, 106, 106, 0.1);
+}
 
 /* special case */
-    .ratings__title {
-        margin-bottom: -20px;
-    }
-    
+.ratings__title {
+    margin-bottom: -20px;
+}
+
 
 /* style to make the numbers of the list */
-    [class$="__item"]::marker {
-        font-weight: bold;
-    }
+.ratings__item,
+.lore__item,
+.art-direction__item,
+.exploration__item,
+.gameplay__item,
+.variety__item,
+.bosses__item,
+.downloads__item ::marker {
+    font-weight: bold;
+}
 
 /* margin for space between each board */
-section{
+section {
     margin-bottom: 30px;
 }
 

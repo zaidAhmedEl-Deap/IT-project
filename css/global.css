@@ -8,7 +8,7 @@
     --theme1-bg-primary: #32385a;
     --theme1-text-primary: #B7C5E1;
     --theme1-text-secondry: #61709B;
-    --theme1-highlight: #915a08;
+    --theme1-highlight: #c77b08;
     /*theme1 colors end */
 
     /*theme 2 start*/
@@ -117,19 +117,19 @@
     --bg-primary: #32385a;
     --text-primary: #B7C5E1;
     --text-secondry: #61709B;
-    --highlight: #915a08;
+    --highlight: #c77b08;
     /* team work  */
 }
 
 body.layout-sidebar {
 
     --bg-primary: #CC983B;
-    --Headings: #5E2A0B;
+    --Headings-gold: #1A0604;
     --bg-secondary: #E8C049;
-    --text-primary: #1A0604;
+    --text-primary: #290906;
     --bars-bg: #300b08;
-    --text-secondary: #61709B;
-    --highlight: #968b7e;
+    --text-secondary: #212632;
+    --highlight: #300b08;
 }
 
 
@@ -357,7 +357,7 @@ header {
 
 .navbar__item {
 
-    margin: var(--item-space);
+    margin: var(--item-space) ;
 
 }
 
