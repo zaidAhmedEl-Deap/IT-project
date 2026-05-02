@@ -1,0 +1,237 @@
+                               /* system-Requirements */
+.demons-souls__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.dark-souls-trilogy__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.bloodborne__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.sekiro__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.elden-ring__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+
+
+
+                                  /* demons-souls */
+
+.demons-souls__div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background:var(--bg-secondary);
+
+
+}
+.demons-souls__div-box{
+    max-width: 450px;
+    flex: 1;
+    padding: 20px;
+    /* border-left: 2px solid var(--theme1-text-primary) ; */
+    position: relative;
+    margin-left: 20px;
+    color:var(--Headings-gold);
+
+}
+                    /* الخط الي قبل البوكس  */
+.demons-souls__div-box::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 70%;
+    background: var(--highlight);
+    top: 25%;
+    left: 2%;
+}
+
+.demons-souls__subtitle{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    width: fit-content;
+    margin-left: -50px;
+    font-size: 21px;
+    border-radius: 3px;
+   border-bottom: 2px solid var(--text-secondry) ;
+    color:var(--text-secondry);
+}
+.demons-souls__list{
+    padding: 0;
+
+}
+.demons-souls__li{
+    margin-bottom: 10px;
+}
+                                    /* dark-souls-trilogy and 2 and 3 */
+.dark-souls-trilogy__div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background:var(--bg-secondary) ;
+   
+} 
+.dark-souls-trilogy__div-box{
+    max-width: 450px;
+    flex: 1;
+    padding: 20px;
+     position: relative;
+     color: var(--Headings-gold);
+
+}
+.dark-souls-trilogy__div-box::before{
+    content: "";
+    top:25%;
+    height: 70%;
+    left: 2%;
+   background: var(--highlight);
+   position: absolute;
+   width: 2px;
+}
+.dark-souls-trilogy__subtitle{
+   border-bottom: 2px  solid  var(--text-secondry) ;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+   /* background-color:var(--theme1-text-primary); */
+   width: fit-content;
+   margin-left: -50px;
+   font-size: 21px;
+   border-radius: 3px;
+   color: var(--text-secondry);
+
+}
+.dark-souls-trilogy__li{
+    margin-bottom: 20px;
+}
+
+                                   /* .bloodborne */
+.bloodborne__div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg-secondary);
+}
+.bloodborne__div-box{
+    flex: 1;
+    padding: 20px;
+    position: relative;
+     color: var(--Headings-gold);
+}
+.bloodborne__div-box::before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    height: 70%;
+    width: 2px;
+    left: 2%;
+    background-color: var(--highlight);
+}
+.bloodborne__subtitle{
+    width: fit-content;
+    /* background-color: var(--theme1-text-primary); */
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    border-bottom: 2px solid  var(--text-secondry);
+    color:  var(--text-secondry);
+
+}   
+.bloodborne__li{
+    margin-bottom: 20px;
+}   
+                                     /* sekiro*/
+
+.sekiro__div{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg-secondary) ;
+    
+}
+.sekiro__div-box{
+    flex: 1;
+    padding: 20px;
+     color: var(--Headings-gold);
+     position: relative;
+}
+.sekiro__div-box::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 70%;
+    top: 25%;
+    left: 2%;
+    background:var(--highlight) ;
+}
+.sekiro__subtitle{
+    width: fit-content;
+    /* background-color: var(--theme1-text-primary); */
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry) ;
+
+}
+.sekiro__li{
+    margin-bottom: 20px;
+}
+                                /* elden-ring */
+.elden-ring__div{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg-secondary) ;
+    
+}
+.elden-ring__div-box{
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    color: var(--Headings-gold) ;
+
+}
+.elden-ring__div-box::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 70%;
+    top: 20%;
+    left: 2%;
+    background: var(--highlight) ;
+}
+.elden-ring__subtitle{
+    width: fit-content;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    /* background:  var(--theme1-text-primary); */
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry) ;
+}
+.elden-ring__li{
+    margin-bottom: 20px;
+
+}
