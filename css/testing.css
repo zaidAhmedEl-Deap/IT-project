@@ -72,7 +72,7 @@
 
 .login__toggle:hover {
     scale: 1.01;
-    background: var(--Headings-gold);
+    background: var(--bg-secondary);
     color: var(--bg-secondary);
 }
 
