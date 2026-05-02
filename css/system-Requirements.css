@@ -1,24 +1,15 @@
                                /* system-Requirements */
-.demons-souls__title{
-    color: var(--text-secondry) ;
+.demons-souls__title, .elden-ring__title, .dark-souls-trilogy__title,
+.bloodborne__title, .sekiro__title
+{
+    color: var(--Headings-gold) ;
     border-bottom: 2px solid var(--text-secondry);
+    text-align: center;
+    margin: 2rem 0;
 } 
-.dark-souls-trilogy__title{
-    color: var(--text-secondry) ;
-    border-bottom: 2px solid var(--text-secondry);
-} 
-.bloodborne__title{
-    color: var(--text-secondry) ;
-    border-bottom: 2px solid var(--text-secondry);
-} 
-.sekiro__title{
-    color: var(--text-secondry) ;
-    border-bottom: 2px solid var(--text-secondry);
-} 
-.elden-ring__title{
-    color: var(--text-secondry) ;
-    border-bottom: 2px solid var(--text-secondry);
-} 
+
+
+
 
 
 
@@ -234,4 +225,4 @@
 .elden-ring__li{
     margin-bottom: 20px;
 
-}
+} 

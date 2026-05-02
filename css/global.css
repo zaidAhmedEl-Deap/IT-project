@@ -124,12 +124,12 @@
 body.layout-sidebar {
 
     --bg-primary: #CC983B;
-    --Headings-gold: #1A0604;
+    --Headings-gold: #310257;
     --bg-secondary: #E8C049;
-    --text-primary: #290906;
+    --text-primary: #4f0701;
     --bars-bg: #300b08;
-    --text-secondary: #212632;
-    --highlight: #300b08;
+    --text-secondry: #640c04;
+    --highlight: #02494e;
 }
 
 
@@ -589,6 +589,11 @@ header {
 .layout-sidebar .navbar__title-container,
 .layout-sidebar .navbar__title {
     display: none;
+}
+
+.layout-sidebar .navbar__theme-label {
+
+    color: var(--bg-secondary);
 }
 
 
