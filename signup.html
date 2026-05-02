@@ -10,6 +10,7 @@
 
 
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/abozyd.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -180,44 +181,91 @@
                 </h1>
                 <p class="signup__description">
                     Ready for Player One? Sign up to start your journey, earn achievements, and dominate the leaderboard
-
                 </p>
-
-                <h2 class="signup__title"> SIGN UP </h2>
 
                 <form class="signup__form">
 
+                     <h2 class="signup__title"> SIGN UP </h2>
+
                     <div class="signup__feild">
-                        <input type="text" required placeholder="Full Name">
+                        <label class="signup__lable">Full Name:</label>
+
+                        <div class="signup__fullname-wrapper"></div>
+                        <input 
+                        type="text"
+                        required 
+                        placeholder="Full Name"
+                        class="signup__input signup__input--fullname">
                     </div>
 
 
+
                     <div class="signup__feild">
-                        <input type="text" required placeholder="username">
+                        <label class="signup__lable">Username:</label>
+
+                        <div class="signup__username-wrapper"></div>
+                        <input 
+                        type="text"
+                        required 
+                        placeholder="username"
+                        minlength="6"
+                        class="signup__input signup__input--username">
                     </div>
 
 
-                    <div class="signup__feild">
-                        <input type="email" required placeholder="name@example.com">
-                    </div>
 
 
                     <div class="signup__feild">
-                        <input type="password" required placeholder="Create a strong password">
+                        <label class="signup__lable">Email:</label>
+
+                        <div class="signup__email-wrapper"></div>
+                        <input 
+                        type="email"
+                        required 
+                        placeholder="email"
+                        class="signup__input signup__input--email">
                     </div>
+  
 
 
                     <div class="signup__feild">
-                        <input type="password" required placeholder="Verify your secret key">
+                        <label class="signup__lable">password:</label>
+
+                        <div class="signup__password-wrapper"></div>
+                        <input 
+                        type="password"
+                        required 
+                        placeholder="ctrate a strong password"
+                        minlength="8"
+                        class="signup__input signup__input--password">
                     </div>
 
-                    <div class="signup__feild signup__feild--checkbox">
-                        <input type="checkbox" id="terms" required>
-                        <label for="terms">I agree to the Terms of War and Privacy Policy</label>
+
+
+                    <div class="signup__feild">
+                        <label class="signup__lable">Verify Password:</label>
+
+                        <div class="signup__vpassword-wrapper"></div>
+                        <input 
+                        type="password"
+                        required 
+                        placeholder="Verify your secret key"
+                        minlength="8"
+                        class="signup__input signup__input--vpassword">
+                    </div>
+
+                    
+
+                    <div class="signup__options">
+
+                        <label class="signup__terms">
+                        <input type="checkbox" class="signup__checkbox" required>
+                        I agree to the Terms of War and Privacy Policy
+                        </label>
                     </div>
 
                     <div class="signup__feild">
-                        <button type="submit" class="signup__button">Spawn Now!</button>
+                        <button type="submit" class="signup__toggle">Spawn Now!</button>
 
                     </div>
 
