@@ -1,5 +1,21 @@
                                /* system-Requirements */
-h1{
+.demons-souls__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.dark-souls-trilogy__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.bloodborne__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.sekiro__title{
+    color: var(--text-secondry) ;
+    border-bottom: 2px solid var(--text-secondry);
+} 
+.elden-ring__title{
     color: var(--text-secondry) ;
     border-bottom: 2px solid var(--text-secondry);
 } 
