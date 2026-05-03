@@ -1,14 +1,23 @@
-/* الفايل ده معمول عشان تشوفو الشغل ماشي ازاي  */
+.main__content{
+    background-image: url('../assets/images/coversignup.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
 
 
-.login__form {
+.signup__form {
 
     padding: 2rem;
     background-color: var(--bg-secondary);
     border-radius: var(--form-radius);
 }
 
-.login__container {
+
+.signup__container {
 
     display: flex;
     justify-content: center;
@@ -16,26 +25,40 @@
     flex-direction: column;
 }
 
-.login__welcome {
+
+
+
+.signup__welcome {
 
     font-size: var(--font-h1);
     color: var(--Headings-gold);
 
 }
 
-.login__title {
 
-    font-size: var(--font-h2);
-    color: var(--text-primary);
-    margin-bottom: 1rem;
+
+.signup__title {
+
+    font-size: var(--font-h1);
+    color: var(--Headings-gold);
+    text-align: center;
+
+}
+.signup__description {
+
+    font-size: var(--font-h1);
+    color: var(--Headings-gold);
+    text-align: center;
+
 }
 
-.login__label {
+
+.signup__label {
 
     color: var(--text-primary);
 }
 
-.login__input {
+.signup__input {
 
     background-color: transparent;
 
@@ -43,19 +66,21 @@
     width: 90%;
     border-radius: var(--form-radius);
     outline: none;
-    border: 1px solid var(--Headings-gold);
+    border: 3px solid var(--Headings-gold);
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     background-color: var(--bg-secondary);
     color: var(--text-primary);
     font-family: var(--font-secondary);
 }
 
-.login__input:focus-within {
+
+
+.signup__input:focus-within {
     outline: none;
     width: 100%;
 }
 
-.login__toggle {
+.signup__toggle {
 
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -70,19 +95,12 @@
     font-family: var(--font-primary);
 }
 
-.login__toggle:hover {
+
+
+.signup__toggle:hover {
     scale: 1.01;
-    background: var(--bg-secondary);
+    background: var(--Headings-gold);
     color: var(--bg-secondary);
 }
 
-.login__signup {
 
-    color: var(--Headings-gold);
-}
-
-.login__link {
-
-    color: var(--text-primary);
-    text-shadow: 1px;
-}
