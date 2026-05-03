@@ -1,17 +1,11 @@
-/* body */
-body {
-    margin: 0;
-    padding: 0;
-}
-
 /* container */
 .login__container {
     width: 100%;
     max-width: 400px;
     margin: 80px auto;
-    padding: 2rem;
-    background-color: #1e1e2f;
-    border-radius: 15px;
+    padding: var(--card-padding);
+    background-color: var(--form-bg);
+    border-radius: var(--form-radius);
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     text-align: center;
     animation: fadeIn 0.5s ease-in-out;
@@ -31,16 +25,16 @@ body {
 
 /* welcome */
 .login__welcome {
-    font-size: 14px;
-    color: #aaa;
-    margin-bottom: 10px;
+    font-size: var(--font-small);
+    color: var(--text-secondry);
+    margin-bottom: 0.5rem;
 }
 
 /* title */
 .login__title {
-    font-size: 28px;
-    color: #fff;
-    margin-bottom: 20px;
+    font-size: var(--font-h2);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
 }
 
 /* form */
@@ -57,27 +51,27 @@ body {
 
 /* label */
 .login__label {
-    font-size: 14px;
-    color: #ccc;
+    font-size: var(--font-small);
+    color: var(--Headings-gold);
     margin-bottom: 5px;
     display: block;
 }
 
 /* input */
 .login__input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    background-color: #2c2c3e;
-    color: #fff;
-    transition: 0.3s;
+    width: var(--form-input-width);
+    padding: var(--form-input-padding);
+    border-radius: var(--form-input-radius);
+    border: 1px solid var(--form-border);
+    outline: var(--form-input-outline);
+    background-color: var(--form-bg);
+    color: var(--form-text);
+    transition: var(--transition-speed);
 }
 
 /* focus */
 .login__input:focus {
-    border: 1px solid #6c5ce7;
+    border: 1px solid var(--form-border);
 }
 
 /* password wrapper */
@@ -91,16 +85,16 @@ body {
 
 /* show button */
 .login__toggle {
-    padding: 10px;
-    background-color: #444;
-    color: #fff;
+    padding: var(--form-input-padding);
+    background-color: var(--highlight);
+    color: var(--text-primary);
     border: none;
-    border-radius: 8px;
+    border-radius: var(--form-input-radius);
     cursor: pointer;
 }
 
 .login__toggle:hover {
-    background-color: #555;
+    opacity: 0.8;
 }
 
 /* options */
@@ -112,35 +106,35 @@ body {
 
 /* remember */
 .login__remember {
-    font-size: 13px;
-    color: #ccc;
+    font-size: var(--font-small);
+    color: var(--Headings-gold);
 }
 
 /* button */
 .login__btn {
-    padding: 12px;
+    padding: var(--btn--padding);
     border: none;
-    border-radius: 10px;
-    background-color: #6c5ce7;
-    color: #fff;
-    font-size: 16px;
+    border-radius: var(--btn-radius);
+    background-color: var(--highlight);
+    color: var(--text-primary);
+    font-size: var(--font-small);
     cursor: pointer;
-    transition: 0.3s;
+    transition: var(--transition-speed);
 }
 
 .login__btn:hover {
-    background-color: #4834d4;
+    opacity: 0.85;
 }
 
 /* signup */
 .login__signup {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #aaa;
+    margin-top: 1rem;
+    font-size: var(--font-small);
+    color: var(--text-secondry);
 }
 
 .login__link {
-    color: #6c5ce7;
+    color: var(--highlight);
     text-decoration: none;
 }
 

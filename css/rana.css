@@ -1,5 +1,6 @@
 .contact__container {
 
+    background-color: var(--bg-secondary);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -7,12 +8,11 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-
 }
 
 .contact__title {
 
-    color: var(--theme1-Headings-gold);
+    color: var(--Headings-gold);
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
@@ -20,7 +20,8 @@
 
 .contact__paragraph {
 
-    color: var(--highlight-gold);
+    font-family: var(--font-secondery);
+    color: var(--Headings-gold);
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
@@ -36,7 +37,7 @@
 
 .contact-form__title {
 
-    color: #ffffff;
+    color: var(--text-primary);
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -50,17 +51,20 @@
 
 .contact-form__input {
 
+    font-family: var(--font-secondery);
+    background-color: var(--bg-secondary);
+    color: #ccc;
     width: 100%;
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
-    border: 3px solid var(--highlight-gold);
+    border: 3px solid var(--bg-primary);
     outline: none;
 }
 
 .contact-form__option {
 
-    color: var(--theme1-highlight);
+    color: var(--highlight);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -74,35 +78,33 @@
 
 .contact-form__label {
 
+    color: var(--highlight);
     display: inline-block;
     padding: 4px 8px;
-    border: 3px solid var(--highlight-gold);
     border-radius: 15px;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.contact-form__label:hover {
-
-    background: var(--card-blue);
-    transform: scale(1.03);
-}
-
 .contact-form__choose:checked+.contact-form__label {
 
-    background: var(--accent-gold);
+    background: var(--Headings-gold);
     transform: scale(1.03);
-    border-color: var(--accent-gold);
+    border-color: var(--Headings-gold);
 }
 
 .contact-form__textarea {
 
+
+    font-family: var(--font-secondery);
+    background-color: var(--bg-secondary);
+    color: #ccc;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     font-size: 16px;
     border-radius: 8px;
-    border: 3px solid var(--highlight-gold);
+    border: 3px solid var(--bg-primary);
     outline: none;
     transition: 0.3s;
     resize: none;
@@ -117,8 +119,9 @@
 
 .contact-form__button {
 
-    background: var(--highlight-gold);
-    color: #ffffff;
+    font-family: var(--font-secondery);
+    background: var(--bg-primary);
+    color: var(--text-primary);
     width: 200px;
     padding: 10px;
     font-size: 1.6rem;
@@ -132,7 +135,7 @@
 
 .contact-form__button:hover {
 
-    background: var(--card-blue);
+    background: var(--Headings-gold);
     transform: scale(1.03);
 }
 
