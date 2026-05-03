@@ -1,12 +1,11 @@
 /* الفايل ده معمول عشان تشوفو الشغل ماشي ازاي  */
 
 
-.login__form {
+.login__form login__container{
 
     padding: 2rem;
     background-color: var(--bg-secondary);
-    border-radius: var(--form-radius);
-}
+    border-radius: var(--form-radius);}
 
 .login__container {
 
@@ -85,4 +84,10 @@
 
     color: var(--text-primary);
     text-shadow: 1px;
+}
+.login {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
