@@ -1,117 +1,140 @@
-/* feedback page */
-
-
+/* Feedback page start */
 .feedback-form {
-    padding: 20px;
+    padding-left: var(--form-padding-x);
+    padding-right: var(--form-padding-x);
+    border: var(--form-border);
     margin: 0 auto;
-    width: 50%;
-    font-size: 25px;
-    border-radius: 15px;
+    width: 70%;
+    font-size:25px;
+    border-radius: var(--form-radius);
+    gap: var(--form-gap)
+    
 }
-
-.feedback-form__textarea,
-.feedback-form__input {
-    padding: 5px;
-    border-radius: 15px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    border: 1px solid rgb(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.9);
-    outline: none;
-    color: #333;
-    transition: 0.1s;
-    position: relative;
-    z-index: 10;
+::placeholder{
+    font-family:var(--font-primary);
+    color: var(--highlight);
+}
+.feedback-form__label{
+    color:var(--Headings-gold);
+    
 }
 
 .feedback-form__textarea {
+    padding: 5px;
+    border-radius: var(--form-radius);
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 1px solid var(--theme1-Headings-gold);
+    background: transparent;
+    outline: none;
+    color: var(--theme1-text-primary);
+    transition: 0.1s;
+    position: relative;
+    z-index: 10;
     cursor: text;
-
+    width:var( --form-input-width);
+    resize:none;
 }
-
 .feedback-form__select {
     outline: none;
-    border-radius: 15px;
+    border-radius: var(--form-radius);
+    font-family: var(--font-primary);
+    color:var(--highlight);
+    background-color: transparent;
+    border-color: var(--theme1-Headings-gold);
 }
-
+.feedback-form__option{
+    font-family:var(--font-primary);
+    background-color: transparent;
+       
+}
 .feedback-form__input--submit,
 .feedback-form__input--reset {
-    width: 20%;
-    border-radius: 15px;
     font-weight: bold;
+    margin: var(--btn-margin);
+    padding: var(--btn--padding);
+    padding-left: var(--btn-padding-x);
+    padding-right: var(--btn-padding-x);
+    width: var(--btn--width);
+    border-radius: var(--btn-radius);
+    font-family: var(--font-primary);
+    background-color:var(--theme1-Headings-gold);
+    
 }
+.feedback-form__input--submit:visited{
+    font-weight: bold;
+    margin: var(--btn-margin);
+    padding: var(--btn--padding);
+    padding-left: var(--btn-padding-x);
+    padding-right: var(--btn-padding-x);
+    width: var(--btn--width);
+    border-radius: var(--btn-radius);
+    font-family: var(--font-primary);
+    background-color:var(--theme1-Headings-gold);
+    
+}
+.feedback-form__input--reset:visited {
+    font-weight: bold;
+    margin: var(--btn-margin);
+    padding: var(--btn--padding);
+    padding-left: var(--btn-padding-x);
+    padding-right: var(--btn-padding-x);
+    width: var(--btn--width);
+    border-radius: var(--btn-radius);
+    font-family: var(--font-primary);
+    background-color: var(--theme1-Headings-gold);
+}    
 
 .feedback-form__input--submit:hover {
-    background-color: transparent;
-    color: aliceblue;
-    transform: translateY(-3px);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transform: translateY(-5px);
+    border-color: var(--Headings-gold);
 }
 
 .feedback-form__input--submit:active {
-    background-color: #8B5A2B;
-    color: aliceblue;
+    background-color:var(--theme1-highlight);
+    color: var(--theme1-text-primary);
 
 }
 
 .feedback-form__input--reset:hover {
-    background-color: transparent;
-    color: aliceblue;
-    transform: translateY(-3px);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transform: translateY(-5px);
+    border-color: var(--theme1-Headings-gold);
 }
 
 .feedback-form__input--reset:active {
-    background-color: #8B5A2B;
-    color: aliceblue;
+    background-color:var(--theme1-highlight);
+    color: var(--theme1-text-primary);
 
 }
-
-.success-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: aliceblue;
-    line-height: 50px;
-}
-
 .feedback-page__title {
     text-align: center;
-    color: aliceblue;
-    font: italic 40px fantasy;
+    color: var(--theme1-Headings-gold);
+    font:50px var(--font-primary);
 }
 
-.success-page__title {
-    font: italic 40px fantasy;
-}
-
-.success-page__paragraph {
-    font-size: 25px;
-}
-
+/* Feedback page end */
 
 
 
 
 @media(max-width:768px) {
-    main {
-        height: auto;
-        padding-top: 100px;
-        padding-bottom: 40px;
-    }
+    
 
     .feedback-form {
-        width: 90%;
+        width: 100%;
         padding: 30px;
         margin: 0 auto;
     }
-
-    .success-page__paragraph {
-        font-size: 15px;
-    }
-
     .feedback-form__label {
         font-size: 20px;
+    }
+    .feedback-page__title{
+        font-size:30px;
+        
     }
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>succes</title>
+    <title>Success</title>
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -24,7 +24,32 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/feedback-style.css">
+    <style>
+        .success-page__container{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             text-align: center;
+             line-height: 50px;
+        }
+        .success-page__title{
+             font:50px var(--font-primary);
+             color: var(--theme1-Headings-gold);
+        }
+        .success-page__paragraph {
+             font:20px var(--font-secondary);
+             line-height: 40px;
+             color:var(--text-primary);
+             
+        } 
+        @media(max-width:768px)
+        {
+            .success-page__paragraph {
+              font-size: 15px;
+            }
+        }  
 
+    </style>
 
 </head>
 
@@ -178,14 +203,13 @@
                 <div class="success-page__group">
                     <h2 class="success-page__title">Thank You!</h2>
                 </div>
-                <div class="success-page__group" style="font-size: 100px; color:#28a745; margin-bottom: 20px;">
+                <div class="success-page__group" style="font-size: 100px; color:#2ecc71; margin-bottom: 20px; text-shadow: 0 0 10px rgba(46,204,113,0.5);">
                     <i class="fa-solid fa-check"></i>
                 </div>
                 <div class="success-page__group">
                     <p class="success-page__paragraph">Thanks a bunch for filling that out.</p>
                     <p class="success-page__paragraph">It means a lot to us, just like you do!</p>
-                    <p class="success-page__paragraph">We really appreciate you giving us a moment of your time today.
-                    </p>
+                    <p class="success-page__paragraph">We really appreciate you giving us a moment of your time today.</p>
                     <p class="success-page__paragraph">Thanks for being you.</p>
                 </div>
             </section>
