@@ -1,51 +1,4 @@
-:root { 
-    --font-primary: 'Inter', sans-serif;
-    --font-heading: 'Montserrat', sans-serif;
-    --bg-dark: #161733;
-    --accent-gold: #c39858;
-    --highlight-gold: #d8c18fce;
-    --card-blue: #32385a;
-    --dark-accent: #392318;
-}
 
-/* 1. Global Styles */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
-    /* font-family: */
-}
-
-.page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/*2. Header Block */
-.header {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: white;
-    border-bottom: 1px solid var(--highlight-gold);
-}
-
-.header__name {
-    padding-left: 30px;
-    font-size: 32px;
-    font-weight: bold;
-    color: var(--bg-dark);
-}
-
-.header__actions {
-    display: flex;
-    gap: 20px;
-}
-
-/* 3. Button Block */
 .btn {
     text-decoration: none;
     padding: 7px 20px;
@@ -70,7 +23,7 @@
 }
 
 
-/* 4. Main Layout (The Container) */
+/*Main content */
 .main-content {
     display: flex;
     flex: 1; 
@@ -78,7 +31,7 @@
 
 
 
-/* 6. Content Block (Main Area) */
+/* Content Block  */
 .content {
     flex: 1;
     padding: 20px;
@@ -87,52 +40,70 @@
     align-items: center;
 }
 
-/* 7. Search Block */
+/* Search Block*/
 .search {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 .search__input{
+    color: #d8c18f;
     width: 550px;
     padding: 10px;
-    border: 1px solid var(--accent-gold);
+    border: 1px solid var(--theme1-Headings-gold);
     border-radius: 20px;
+    background-color: rgba(19, 18, 18, 0.596);
+}
+::placeholder{
+    color:var(--theme1-Headings-gold);
+    font-style:italic;
+    font-family: var(--font-primary);
 }
 
-/* 8. Hero Section Block */
 .text-section {
-    margin: 20px ;
+    margin: 10px ;
+    margin-top: 10px;
 }
 
 .text-section__title {
-    padding: 20px;
-    font-size: 65px;
+    padding: 40px;
+    font-size: 60px;
     text-align: center;
-    color: white;
+    color:var(--theme1-Headings-gold);
+
+}
+.text-section__title:hover {
+    transition: all 0.3 ;
+    color:var(--theme2-text-secondry);
+    cursor:context-menu;
 }
 
-/* 9. Info Card Block */
+/* Info Card Block */
 .info-card {
     padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.21);
+    border: 1px solid var(--theme1-Headings-gold);
+    border-radius: 20px;
+    background-color: rgba(19, 18, 18, 0.596);
     text-align: center;
 }
 
 .info-card__text {
     color: white;
     font-size: 24px;
-    font-weight: bold;
-    line-height: 1.3;
+    line-height: 1.6;
+    font-family:var(--font-primary);
 }
 
 .video-container {
     margin:auto;
     margin-top: 50px;
-    width: 80%; 
-    max-width: 500px;
+    width: 90%; 
+    max-width: 700px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -143,11 +114,11 @@
     display:block;
 }
 
-/* 10. Footer Block */
+/* Footer Block */
 .footer {
     margin-top: auto;
     padding: 10px;
-    background-color: var(--card-blue);
+    background-color: var(--highlight-gold);
     width: 100%;
     text-align: center;
 }
@@ -158,42 +129,16 @@
 
 
 body {
-   
-    background-image: url('/assets/images/dark-souls-bonfire-3840x2160-18682.jpg'); 
-
-    /* تخلي الصورة تغطي الشاشة بالكامل مهما كان حجم الشاشة */
-    background-size: cover; 
-
-    /* تخلي الصورة ثابتة في مكانها لما تعملي سكرول */
-    background-attachment: fixed; 
-
-    /* تخلي الصورة دايماً في نص الشاشة */
+  
+    background-image: url('../assets/images/home4.jpg'); 
+    background-size:cover;
+    background-attachment: fixed;
     background-position: center; 
-
-    /* تمنع تكرار الصورة */
     background-repeat: no-repeat; 
-
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    
-    /* إضافة طبقة تعتيم خفيفة عشان الكلام يبان بوضوح */
     color: white; 
 }
 
-/* تعديل بسيط للـ Sidebar و الـ Header عشان يمشوا مع الخلفية */
-/*.sidebar, .main-header {
-    background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
-    /*backdrop-filter: blur(10px);  تأثير زجاجي (Glassmorphism) */
-    color: white;
-}*/
 
-/*.sidebar ul li a, .logo, .btn {
-    color: white !important;
-    border-color: white !important;
-}
 
-.hero-box {
-    background-color: rgba(0, 0, 0, 0.4); /* خلفية سوداء خفيفة ورا النص */
-   /* border-radius: 15px;
-}*/
