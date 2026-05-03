@@ -1,3 +1,14 @@
+body {
+    background-image: url('../assets/images/home4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+
 .contact__container {
 
     background-color: var(--bg-secondary);
@@ -17,7 +28,7 @@
 
 .contact__paragraph {
 
-    font-family: var( --font-secondary);
+    font-family: var(--font-secondary);
     color: var(--highlight);
     margin: 1.5rem auto;
     width: 100%;
@@ -26,8 +37,8 @@
     font-size: var(--font-h4);
     border-bottom: solid 1px var(--highlight);
     padding: 1rem 1.5rem;
-   
- 
+
+
 }
 
 .contact__form {
@@ -43,7 +54,7 @@
     border-left: solid 1px var(--highlight);
     padding: 0 1.5rem;
 
-    
+
 }
 
 .contact-form__row {
@@ -67,7 +78,7 @@
     transition: all 0.3s ease;
 }
 
-.contact-form__input::placeholder  {
+.contact-form__input::placeholder {
     color: var(--Headings-gold);
 }
 
@@ -120,10 +131,11 @@
     resize: none;
 }
 
-.contact-form__textarea:focus-within, .contact-form__input:focus-within {
+.contact-form__textarea:focus-within,
+.contact-form__input:focus-within {
     border-color: var(--highlight);
     scale: 1.01;
-    
+
 }
 
 .contact-form__buttons {
@@ -134,7 +146,7 @@
 }
 
 .contact-form__button {
-    
+
     display: inline-block;
     font-family: var(--font-secondery);
     background: var(--bg-primary);
@@ -154,5 +166,3 @@
     background: var(--highlight);
     transform: scale(1.02);
 }
-
-

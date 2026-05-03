@@ -55,7 +55,7 @@
     --btn--padding: 0.75rem;
     --btn-padding-x: 1.5rem;
     --btn--width: 12rem;
-    --btn-radius: 1.6rem;
+    --btn-radius: 0.6rem;
     --radius-main: 0.5rem;
 
     /*section padding  */
@@ -76,7 +76,7 @@
 
 
     /*theme 1 Form Colors */
-    --form-bg: var(--theme1-bg-secondary);
+    --form-bg: var(--bg-secondary);
     /* أو أي لون تختاره من اللي حددناهم */
     --form-border: #2F3B5B;
     --form-text: var(--theme1-text-primary);
@@ -124,12 +124,13 @@
 body.layout-sidebar {
 
     --bg-primary: #CC983B;
-    --Headings-gold: #310257;
+    --Headings-gold: #0f102be9;
     --bg-secondary: #E8C049;
     --text-primary: #4f0701;
     --bars-bg: #300b08;
     --text-secondry: #640c04;
-    --highlight: #02494e;
+    --highlight: #0082cd;
+     --form-bg: #E8C049;
 }
 
 

@@ -24,8 +24,9 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/testing.css">
 
+    <link rel="stylesheet" href="./css/testing.css">
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 
 <body class="layout-horizontal">
@@ -173,65 +174,85 @@
 
     <main class="main__content">
         <div class="main__content-container">
-            <div class="login__container">
-
-                <h1 class="login__welcome">
-                    Welcome back! Please login to your account
-                </h1>
+            <div class="signup__container">
 
 
-                <h2 class="login__title">Login</h2>
-
-                <div class="login__form-container">
-                    <form class="login__form">
 
 
-                        <div class="login__field">
-                            <label class="login__label">Email</label>
 
-                            <div class="login__email-wrapper"></div>
-                            <input type="email" required placeholder="" class="login__input login__input--email">
+                <p class="signup__welcome">
+                   Begin Your Adventure! create an account
+                </p>
+
+
+                <h2 class="signup__title">sign-up</h2>
+
+
+                <form class="signup__form">
+                                        <div class="signup__field">
+                    <label class="signup__label">FullName</label>
+
+                        <div class="signup__namr-wrapper"></div>
+                        <input type="text" required placeholder="" class="signup__input signup__input--name">
+                    </div>
+
+                                        <div class="signup__field">
+                     <label class="signup__label">username</label>
+
+                        <div class="signup__email-wrapper"></div>
+                        <input type="email" required placeholder="" class="signup__input signup__input--email">
+                    </div>
+
+                    <div class="signup__field">
+                        <label class="signup__label">Email</label>
+
+                        <div class="signup__email-wrapper"></div>
+                        <input type="email" required placeholder="" class="signup__input signup__input--email">
+                    </div>
+
+
+                    <div class="signup__field">
+                        <label class="signup__label">Password</label>
+
+                        <div class="signup__password-wrapper">
+
+                            <input type="password" required minlength="6" placeholder=""
+                                class="signup__input signup__input--password">
+
+                            <button type="button" class="signup__toggle">
+                                Show
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="signup__field">
+                        <label class="signup__label"> Verify Password</label>
+
+                        <div class="signup__password-wrapper">
+
+                            <input type="password" required minlength="6" placeholder=""
+                                class="signup__input signup__input--password">
+
+                            <button type="button" class="signup__toggle">
+                                Show
+                            </button>
+
                         </div>
 
 
-                        <div class="login__field">
-                            <label class="login__label">Password</label>
-
-                            <div class="login__password-wrapper">
-
-                                <input type="password" required minlength="6" placeholder=""
-                                    class="login__input login__input--password">
-
-                                <button type="button" class="login__toggle">
-                                    Show
-                                </button>
-
-                            </div>
-                        </div>
-
-
-                        <div class="login__options">
-
-                            <label class="login__label">
-                                <input type="checkbox" class="login__checkbox">
-                                Remember Me
-                            </label>
-                        </div>
-
-
-                        <button class="login__btn login__toggle">
-                            Sign In
+                        <button class="signup__btn">
+                            Sign up
                         </button>
 
-                        <p class="login__signup">
-                            Don't have an account?
-                            <a href="./signup.html" class="login__link login__link--signup">
-                                Sign Up
-                            </a>
-                        </p>
+                </form>
 
-                    </form>
-                </div>
+
+                <p class="signup__login">
+                    Already a member?
+                    <a href="login.html" class="signup__link">Sign In</a>
+                </p>
+
 
 
             </div>

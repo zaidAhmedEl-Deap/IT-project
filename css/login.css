@@ -1,4 +1,13 @@
 /* container */
+body {
+    background-image: url('../assets/images/home4.jpg'); 
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+}
 .login__container {
     width: 100%;
     max-width: 400px;
@@ -71,7 +80,7 @@
 
 /* focus */
 .login__input:focus {
-    border: 1px solid var(--form-border);
+    border: 1px solid var(--Headings-gold);
 }
 
 /* password wrapper */
@@ -91,6 +100,7 @@
     border: none;
     border-radius: var(--form-input-radius);
     cursor: pointer;
+    margin-left: 0.7rem;
 }
 
 .login__toggle:hover {
@@ -140,4 +150,10 @@
 
 .login__link:hover {
     text-decoration: underline;
+}
+
+/* layout sidebar  */
+.layout-sidebar .login__container {
+
+    background-color: var(--bg-secondary);
 }
