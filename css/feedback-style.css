@@ -19,15 +19,16 @@ body {
     width: 70%;
     font-size:25px;
     border-radius: var(--form-radius);
-    gap: var(--form-gap)
+    gap: var(--form-gap);
+    background-color: var(--bg-secondary);
     
 }
 ::placeholder{
-    font-family:var(--font-primary);
+    font-family:var(--font-secondary);
     color: var(--highlight);
 }
 .feedback-form__label{
-    color:var(--Headings-gold);
+    color: var(--Headings-gold);
     
 }
 
@@ -36,10 +37,10 @@ body {
     border-radius: var(--form-radius);
     margin: 0 auto;
     margin-bottom: 25px;
-    border: 1px solid var(--theme1-Headings-gold);
+    border: 1px solid var(-Headings-gold);
     background: transparent;
     outline: none;
-    color: var(--theme1-text-primary);
+    color: var(--text-primary);
     transition: 0.1s;
     position: relative;
     z-index: 10;
@@ -53,7 +54,7 @@ body {
     font-family: var(--font-primary);
     color:var(--highlight);
     background-color: transparent;
-    border-color: var(--theme1-Headings-gold);
+    border-color: var(--Headings-gold);
 }
 .feedback-form__option{
     font-family:var(--font-primary);
@@ -70,7 +71,7 @@ body {
     width: var(--btn--width);
     border-radius: var(--btn-radius);
     font-family: var(--font-primary);
-    background-color:var(--theme1-Headings-gold);
+    background-color:var(--Headings-gold);
     
 }
 .feedback-form__input--submit:visited{
@@ -94,7 +95,7 @@ body {
     width: var(--btn--width);
     border-radius: var(--btn-radius);
     font-family: var(--font-primary);
-    background-color: var(--theme1-Headings-gold);
+    background-color: var(--Headings-gold);
 }    
 
 .feedback-form__input--submit:hover {
@@ -124,8 +125,8 @@ body {
 }
 .feedback-page__title {
     text-align: center;
-    color: var(--theme1-Headings-gold);
-    font:50px var(--font-primary);
+    color: var(--Headings-gold);
+    font:var(--font-h2) var(--font-primary);
 }
 
 /* Feedback page end */
