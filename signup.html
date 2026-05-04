@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
 
 </head>
@@ -124,17 +124,7 @@
                             <li class="sidebar__item"><a href="./contact.html" class="sidebar__link"> <i
                                         class="fa-solid fa-message sidebar__icon"></i><span
                                         class="sidebar__link-text">Contact-us</span></a></li>
-                            <li class="sidebar__item" id="sidebar-auth-item">
-                                <a href="./login.html" class="sidebar__link" id="sidebar-login-link">
-                                    <i class="fa-solid fa-right-to-bracket sidebar__icon"></i>
-                                    <span class="sidebar__link-text">Login</span>
-                                </a>
 
-                                <a href="#" class="sidebar__link" id="sidebar-logout-link" style="display: none;">
-                                    <i class="fa-solid fa-arrow-right-from-bracket sidebar__icon"></i>
-                                    <span class="sidebar__link-text">Logout</span>
-                                </a>
-                            </li>
                         </ul>
 
         </div>
@@ -175,14 +165,14 @@
 
     <main class="main__content">
         <div class="main__content-container">
-             <div class="signup__container">
+            <div class="signup__container">
 
 
 
 
 
                 <p class="signup__welcome">
-                   Begin Your Adventure! create an account
+                    Begin Your Adventure! create an account
                 </p>
 
 
@@ -190,83 +180,69 @@
 
 
                 <form class="signup__form" id="signup-form" name="signup-form">
-                 <div class="signup__field">
-                    <label class="signup__label">FullName</label>
+                    <div class="signup__field">
+                        <label class="signup__label">FullName</label>
 
                         <div class="signup__name-wrapper" id="name">
-                        <input type="text" name="fullname" placeholder="" class="signup__input signup__input--name">
-                    </div>
-
-                                        <div class="signup__field">
-                     <label class="signup__label">username</label>
-
-                        <div class="signup__email-wrapper">
-                        <input 
-                        type="text" 
-                        required placeholder=""
-                        class="signup__input signup__input--email" 
-                        id="username"
-                        name="username"
-                        >
-                    </div>
-
-                    <div class="signup__field">
-                        <label class="signup__label">Email</label>
-
-                        <div class="signup__email-wrapper">
-                        <input type="email" required placeholder="" 
-                        class="signup__input signup__input--email"
-                        id="userEmail"
-                        name="userEmail"
-                        >
-                    </div>
-
-
-                    <div class="signup__field">
-                        <div class="signup__row">
-                        <div class="signup__group">
-                        <label class="signup__label">Password</label>
-
-                            <input 
-                            type="password" 
-                            name="password" placeholder=""
-                            class="signup__input signup__input--password"
-                            id="password"
-                            >
-                            
-                        </div>
-                              <div class="signup__group">
-                            <button type="button" class="signup__toggle" id="show-btn">
-                                Show
-                            </button>
-                            </div>
-                            </div>
-
-                        
-                    </div>
-
-                    <div class="signup__field">
-                        <div class="signup__row">
-                        <div class="signup__group">
-                        <label class="signup__label"> Verify Password</label>
-
-                        
-
-                            <input type="password" required  placeholder=""
-                                class="signup__input signup__input--password"
-                                id="confirmPassword"
-                                name="confirmPassword"
-                                >
-                        </div>  
-
+                            <input type="text" name="fullname" placeholder="" class="signup__input signup__input--name">
                         </div>
 
-                         
-                    </div>
-                        <button class="signup__btn">
-                            Sign up
-                        </button>
-                      
+                        <div class="signup__field">
+                            <label class="signup__label">username</label>
+
+                            <div class="signup__email-wrapper">
+                                <input type="text" required placeholder="" class="signup__input signup__input--email"
+                                    id="username" name="username">
+                            </div>
+
+                            <div class="signup__field">
+                                <label class="signup__label">Email</label>
+
+                                <div class="signup__email-wrapper">
+                                    <input type="email" required placeholder=""
+                                        class="signup__input signup__input--email" id="userEmail" name="userEmail">
+                                </div>
+
+
+                                <div class="signup__field">
+                                    <div class="signup__row">
+                                        <div class="signup__group">
+                                            <label class="signup__label">Password</label>
+
+                                            <input type="password" name="password" placeholder=""
+                                                class="signup__input signup__input--password" id="password">
+
+                                        </div>
+                                        <div class="signup__group">
+                                            <button type="button" class="signup__toggle" id="show-btn">
+                                                Show
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="signup__field">
+                                    <div class="signup__row">
+                                        <div class="signup__group">
+                                            <label class="signup__label"> Verify Password</label>
+
+
+
+                                            <input type="password" required placeholder=""
+                                                class="signup__input signup__input--password" id="confirmPassword"
+                                                name="confirmPassword">
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <button class="signup__btn">
+                                    Sign up
+                                </button>
+
                 </form>
 
 
@@ -280,7 +256,7 @@
             </div>
         </div>
     </main>
- 
+
     <!-- main end -->
 
 

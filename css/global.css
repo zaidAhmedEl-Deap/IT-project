@@ -130,7 +130,7 @@ body.layout-sidebar {
     --bars-bg: #300b08;
     --text-secondry: #640c04;
     --highlight: #0082cd;
-     --form-bg: #E8C049;
+    --form-bg: #E8C049;
 }
 
 
@@ -204,7 +204,7 @@ body {
     font-family: var(--font-primary);
     overflow-x: hidden;
     max-width: 100vw;
-    
+
 
 }
 
@@ -625,6 +625,10 @@ header {
     padding: 1rem 0;
 }
 
+.layout-sidebar .navbar__top {
+    background-color: var(--theme2-bars-bg);
+}
+
 .layout-sidebar .sidebar__title-container {
 
     display: flex;
@@ -684,8 +688,7 @@ header {
     margin-right: 1.5rem;
 }
 
-.layout-sidebar .navbar__search,
-.layout-sidebar .navbar__top {
+.layout-sidebar .navbar__search {
 
     display: none;
 }
@@ -697,7 +700,7 @@ header {
 
     margin-left: 260px;
     width: calc(100% - 260px);
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 /*sidebar theme end */
@@ -706,7 +709,7 @@ header {
 .form__error {
     color: var(--text-primary);
     font-size: var(--font-small);
-    
+
 }
 
 
