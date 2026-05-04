@@ -18,6 +18,12 @@
     margin-bottom: 20px;
 }
 
+.contact__title:hover {
+
+    color: var(--text-primary);
+    transform: scale(1.03);
+}   
+
 .contact__paragraph {
 
     font-family: var(--font-secondery);
@@ -42,6 +48,11 @@
     margin-top: 20px;
 }
 
+.contact-form__title:hover {
+
+    color: var(--Headings-gold);
+    transform: scale(1.03);
+}
 .contact-form__row {
 
     display: flex;
@@ -136,7 +147,7 @@
 .contact-form__button:hover {
 
     background: var(--Headings-gold);
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 aside {
