@@ -295,7 +295,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 0.25rem 0;
+    padding: 0.2rem 2rem;
     background-color: var(--theme1-bg-primary);
 }
 
@@ -688,7 +688,8 @@ header {
     margin-right: 1.5rem;
 }
 
-.layout-sidebar .navbar__search {
+.layout-sidebar .navbar__search,
+.layout-sidebar .navbar__mid {
 
     display: none;
 }
@@ -714,3 +715,22 @@ header {
 
 
 /* js error message styling end */
+
+/* styling user login view start */
+.navbar__user-name {
+    margin-right: 1.5rem;
+    color: var(--text-primary);
+    font-size: var(--font-body);
+    transition: all var(--transition-speed) ease;
+    text-transform: capitalize;
+    font-family: var(--font-secondary);
+    border-bottom: 1px solid var(--Headings-gold);
+}
+
+#nav-logout-btn {
+    color: var(--highlight);
+
+}
+
+
+/* styling user login view end  */
