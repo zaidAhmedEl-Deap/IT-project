@@ -38,4 +38,20 @@ hamborgur.onclick = function () {
         : 'fa-solid fa-bars'
 }
 
-//search code
+//uodate navbar 
+
+let user = localStorage.getItem("user");
+if (user) {
+    let parseduser = JSON.parse(user);
+    document.getElementById("logged-in-view").classList.remove("u-hidden");
+    document.getElementById("logged-out-view").classList.add("u-hidden");
+    document.getElementById("user-name-display").innerHTML = `Hello, ${parseduser.username}`;
+}
+
+document.getElementById("nav-logout-btn").addEventListener('click', () => {
+
+    localStorage.removeItem("user");
+    window.location.href = "login.html";
+});
+
+

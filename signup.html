@@ -188,11 +188,11 @@
                 <h2 class="signup__title">sign-up</h2>
 
 
-                <form class="signup__form">
+                <form class="signup__form" id="signup-form">
                                         <div class="signup__field">
                     <label class="signup__label">FullName</label>
 
-                        <div class="signup__namr-wrapper"></div>
+                        <div class="signup__name-wrapper" id="name"></div>
                         <input type="text" required placeholder="" class="signup__input signup__input--name">
                     </div>
 
@@ -200,14 +200,22 @@
                      <label class="signup__label">username</label>
 
                         <div class="signup__email-wrapper"></div>
-                        <input type="email" required placeholder="" class="signup__input signup__input--email">
+                        <input 
+                        type="text" 
+                        required placeholder=""
+                        class="signup__input signup__input--email" 
+                        id="username"
+                        >
                     </div>
 
                     <div class="signup__field">
                         <label class="signup__label">Email</label>
 
                         <div class="signup__email-wrapper"></div>
-                        <input type="email" required placeholder="" class="signup__input signup__input--email">
+                        <input type="email" required placeholder="" 
+                        class="signup__input signup__input--email"
+                        id="userEmail"
+                        >
                     </div>
 
 
@@ -216,8 +224,13 @@
 
                         <div class="signup__password-wrapper">
 
-                            <input type="password" required minlength="6" placeholder=""
-                                class="signup__input signup__input--password">
+                            <input 
+                            type="password" 
+                            required minlength="6" placeholder=""
+                            class="signup__input signup__input--password"
+                            id="password"
+                            >
+                            
 
                             <button type="button" class="signup__toggle">
                                 Show
@@ -232,7 +245,9 @@
                         <div class="signup__password-wrapper">
 
                             <input type="password" required minlength="6" placeholder=""
-                                class="signup__input signup__input--password">
+                                class="signup__input signup__input--password"
+                                id="confirmPassword"
+                                >
 
                             <button type="button" class="signup__toggle">
                                 Show
@@ -267,7 +282,9 @@
     <footer>
         <p class="footer__copyright">IT Team يارب نعدي &copy; </p>
     </footer>
+    <script src="./Js/signup.js"></script>
     <script src="./Js/main.js"></script>
+
 </body>
 
 </html>
