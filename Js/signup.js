@@ -1,4 +1,34 @@
-//signup 
+//signup page js part
+
+//show password start
+$(function () {
+
+})
+let PasswordStatus = false;
+
+document.getElementById("show-btn").addEventListener("click", () => {
+
+
+    let passInputs = document.querySelectorAll(".signup__input--password");
+    passInputs.forEach((input) => {
+
+        if (PasswordStatus === false) {
+            input.setAttribute("type", "text");
+
+        }
+        else {
+            input.setAttribute("type", "password");
+
+        }
+    });
+
+    PasswordStatus = !PasswordStatus;
+
+
+});
+//show password start
+
+
 $(function () {
     $("#signup-form").validate({
         rules: {
@@ -46,6 +76,11 @@ $(function () {
 
             }
         },
+        errorClass: "form__error",
+        errorElement: "span",
+
+
+
         submitHandler: function (form, event) {
             event.preventDefault();
             let name = document.getElementById("name").value;
@@ -71,6 +106,8 @@ $(function () {
     });
 
 });
+
+
 
 
 

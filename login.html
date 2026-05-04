@@ -25,6 +25,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/login.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
 
 </head>
 
@@ -194,8 +197,8 @@
                         <label class="login__label">Email</label>
 
                         <div class="login__email-wrapper"></div>
-                        <input type="email" required placeholder="" class="login__input login__input--email"
-                            id="user-email">
+                        <input name="userEmail" type="email" placeholder="" class="login__input login__input--email"
+                            id="userEmail">
                     </div>
 
 
@@ -204,10 +207,10 @@
 
                         <div class="login__password-wrapper">
 
-                            <input type="password" required minlength="6" placeholder=""
+                            <input name="password" type="password" placeholder=""
                                 class="login__input login__input--password" id="password">
 
-                            <button type="button" class="login__toggle">
+                            <button type="button" class="login__toggle" id="show-btn">
                                 Show
                             </button>
 
@@ -215,7 +218,7 @@
                     </div>
 
 
-  
+
 
 
                     <button class="login__btn login__btn--primary">
@@ -244,7 +247,7 @@
     <footer>
         <p class="footer__copyright">IT Team يارب نعدي &copy; </p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./Js/login.js"></script>
     <script src="./Js/main.js"></script>
 </body>

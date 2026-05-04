@@ -107,18 +107,10 @@ body {
     opacity: 0.8;
 }
 
-/* options */
-.login__options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-/* remember */
-.login__remember {
-    font-size: var(--font-small);
-    color: var(--Headings-gold);
-}
+
+
+
 
 /* button */
 .login__btn {

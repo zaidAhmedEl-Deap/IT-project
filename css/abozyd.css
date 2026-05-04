@@ -10,6 +10,8 @@ body {
 
 
 
+
+
 /* container */
 .signup__container {
     width: 100%;
@@ -60,7 +62,10 @@ body {
 /* field */
 .signup__field {
     text-align: left;
+    
 }
+
+
 
 /* label */
 .signup__label {
@@ -88,13 +93,13 @@ body {
 }
 
 /* password wrapper */
-.signup__password-wrapper {
+.signup__row {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.signup__password-wrapper .signup__input {
-    flex: 1;
-}
 
 /* show button */
 .signup__toggle {

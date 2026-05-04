@@ -701,3 +701,13 @@ header {
 }
 
 /*sidebar theme end */
+
+/* js error message styling start */
+.form__error {
+    color: var(--text-primary);
+    font-size: var(--font-small);
+    
+}
+
+
+/* js error message styling end */
