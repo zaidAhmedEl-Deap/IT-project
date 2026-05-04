@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
 
 </head>
@@ -188,12 +189,12 @@
                 <h2 class="signup__title">sign-up</h2>
 
 
-                <form class="signup__form" id="signup-form">
+                <form class="signup__form" id="signup-form" name="signup-form">
                                         <div class="signup__field">
                     <label class="signup__label">FullName</label>
 
                         <div class="signup__name-wrapper" id="name"></div>
-                        <input type="text" required placeholder="" class="signup__input signup__input--name">
+                        <input type="text" name="fullname" placeholder="" class="signup__input signup__input--name">
                     </div>
 
                                         <div class="signup__field">
@@ -205,6 +206,7 @@
                         required placeholder=""
                         class="signup__input signup__input--email" 
                         id="username"
+                        name="username"
                         >
                     </div>
 
@@ -215,6 +217,7 @@
                         <input type="email" required placeholder="" 
                         class="signup__input signup__input--email"
                         id="userEmail"
+                        name="userEmail"
                         >
                     </div>
 
@@ -226,7 +229,7 @@
 
                             <input 
                             type="password" 
-                            required minlength="6" placeholder=""
+                            name="password" placeholder=""
                             class="signup__input signup__input--password"
                             id="password"
                             >
@@ -247,6 +250,7 @@
                             <input type="password" required minlength="6" placeholder=""
                                 class="signup__input signup__input--password"
                                 id="confirmPassword"
+                                name="confirmPassword"
                                 >
 
                             <button type="button" class="signup__toggle">
@@ -282,6 +286,7 @@
     <footer>
         <p class="footer__copyright">IT Team يارب نعدي &copy; </p>
     </footer>
+
     <script src="./Js/signup.js"></script>
     <script src="./Js/main.js"></script>
 
