@@ -16,6 +16,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 8px;
 }
 
 .contact__title {
@@ -29,21 +30,20 @@ body {
 .contact__paragraph {
 
     font-family: var(--font-secondary);
+    padding: 20px;
+    border: 1px solid var(--Headings-gold);
+    border-radius: 8px;
+    background-color: rgba(19, 18, 18, 0.596);
+    text-align: center;
+    margin:0 2rem 4rem;
     color: var(--highlight);
-    margin: 1.5rem auto;
-    width: 100%;
-    font-weight: 500;
-
-    font-size: var(--font-h4);
-    border-bottom: solid 1px var(--highlight);
-    padding: 1rem 1.5rem;
-
 
 }
 
 .contact__form {
 
     width: 100%;
+    
 
 }
 
@@ -87,8 +87,10 @@ body {
     color: var(--highlight);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 3rem;
     font-size: var(--font-h4);
+    font-family: var(--font-secondary);
 }
 
 .contact-form__choose {
@@ -148,21 +150,21 @@ body {
 .contact-form__button {
 
     display: inline-block;
-    font-family: var(--font-secondery);
-    background: var(--bg-primary);
+    font-family: var(--font-secondary);
+    background: var(--highlight);
     color: var(--text-primary);
-    width: 200px;
-    padding: 1rem 1.5rem;
+   
+    padding: var(--form-input-padding);
     font-size: var(--font-h4);
     border: none;
-    border-radius: 8px;
+    border-radius:  var(--form-input-radius);
     cursor: pointer;
-    margin: 1rempx 0.5rem;
+   margin-left: 0.7rem;
     transition: 0.3s;
 }
 
 .contact-form__button:hover {
 
-    background: var(--highlight);
-    transform: scale(1.02);
+   opacity: 0.8;
+   
 }

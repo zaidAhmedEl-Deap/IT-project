@@ -1,4 +1,17 @@
 
+
+body {
+  
+    background-image: url('../assets/images/home4.jpg'); 
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    
+}
+
 .btn {
     text-decoration: none;
     padding: 7px 20px;
@@ -42,7 +55,8 @@
 
 /* Search Block*/
 .search {
-    margin-bottom: 20px;
+    margin:0 2rem 4rem;
+    
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -53,11 +67,19 @@
 
 .search__input{
     color: #d8c18f;
-    width: 550px;
+   
     padding: 10px;
-    border: 1px solid var(--theme1-Headings-gold);
-    border-radius: 20px;
+    border: 1px solid var(--Headings-gold);
+    border-radius: 8px;
     background-color: rgba(19, 18, 18, 0.596);
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+    
+}
+.search__input:focus-within {
+    outline: none;
+    border-color: var(--highlight) ; 
+    width: 100%;
 }
 ::placeholder{
     color:var(--theme1-Headings-gold);
@@ -74,71 +96,46 @@
     padding: 40px;
     font-size: 60px;
     text-align: center;
-    color:var(--theme1-Headings-gold);
-
+    color:var(--Headings-gold);
+    transition: all 0.3s ease-in-out ;
+    cursor:context-menu;
 }
 .text-section__title:hover {
-    transition: all 0.3 ;
-    color:var(--theme2-text-secondry);
-    cursor:context-menu;
+    
+    color:var(--text-secondry);
+    
 }
 
 /* Info Card Block */
 .info-card {
     padding: 20px;
-    border: 1px solid var(--theme1-Headings-gold);
-    border-radius: 20px;
+    border: 1px solid var(--Headings-gold);
+    border-radius: 8px;
     background-color: rgba(19, 18, 18, 0.596);
     text-align: center;
+    margin:0 2rem 4rem;
+    
 }
 
 .info-card__text {
-    color: white;
+    color: var(--text-secondry);
     font-size: 24px;
     line-height: 1.6;
     font-family:var(--font-primary);
 }
 
 .video-container {
-    margin:auto;
-    margin-top: 50px;
-    width: 90%; 
+    margin:4rem auto;
+  
+    width: 100%; 
     max-width: 700px;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
 }
 
-.video-container video {
-    width: 100%;
-    display:block;
-}
-
-/* Footer Block */
-.footer {
-    margin-top: auto;
-    padding: 10px;
-    background-color: var(--highlight-gold);
-    width: 100%;
-    text-align: center;
-}
-
-.footer__copyright {
-    color: var(--highlight-gold);
-}
 
 
-body {
-  
-    background-image: url('../assets/images/home4.jpg'); 
-    background-size:cover;
-    background-attachment: fixed;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    margin: 0;
-    padding: 0;
-    color: white; 
-}
 
 
 

@@ -1,49 +1,62 @@
 /* the padding between each article */
-    .demons-souls, .dark-souls-trilogy, .bloodborne, .sekiro, .elden-ring {
-        padding: 75px;
-    }
+.demons-souls,
+.dark-souls-trilogy,
+.bloodborne,
+.sekiro,
+.elden-ring {
+    padding: 75px;
+}
 
 /* the styling for all images */
-    section {
+section {
 
-        background-color: var(--bg-secondary);
-         border: 1px solid var(--Headings-gold);
-        border-radius: 8px;
-        padding: 1rem 1.5rem;
-        margin-bottom: 2rem;
-    }
-    img {
-        width: 100%;
-        height: auto;
-        padding-bottom: 20px;
-        border-radius: 8px;
-        padding: 1rem 2rem;
-        border: 1px solid var(--Headings-gold);
-        margin-bottom: 1.5rem;
-    }
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--Headings-gold);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
 
-    
+img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    border: 1px solid var(--Headings-gold);
+    margin-bottom: 1.5rem;
+}
 
-    h1 {
-        color: var(--Headings-gold);
-    }
-    h2 {
-       color: var(--highlight); 
-    }
-    h3 {
-        color: var( --highlight);
-        margin: 1rem 0;
-    }
-    p {
-        color: var(--text-primary);
-        font-size: var(--font-body);
-        
-    }
-    .layout-sidebar p {
-        padding-bottom: 1.5rem;
-    }
 
-    /* the spaces for all main titles */
- 
 
-    /* the spaces for all subheadings */
+h1 {
+    color: var(--Headings-gold);
+}
+
+h2 {
+    color: var(--highlight);
+}
+
+h3 {
+    color: var(--highlight);
+    margin: 1rem 0;
+}
+
+p {
+    color: var(--text-primary);
+    font-size: var(--font-body);
+
+}
+
+.layout-sidebar p {
+    padding-bottom: 1.5rem;
+}
+
+.layout-sidebar .footer__copyright {
+    padding: 0;
+}
+
+/* the spaces for all main titles */
+
+
+/* the spaces for all subheadings */

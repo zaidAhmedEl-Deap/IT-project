@@ -123,13 +123,13 @@
 
 body.layout-sidebar {
 
-    --bg-primary: #CC983B;
-    --Headings-gold: #0f102be9;
-    --bg-secondary: #E8C049;
-    --text-primary: #4f0701;
+    --bg-primary: #d2cec7;
+    --Headings-gold: #B8860B;
+    --bg-secondary: #F6F1E9;
+    --text-primary: #2C2C2C;
     --bars-bg: #300b08;
-    --text-secondry: #640c04;
-    --highlight: #0082cd;
+    --text-secondry: #FFD700;
+    --highlight: #E67E22;
     --form-bg: #E8C049;
 }
 
@@ -171,7 +171,7 @@ a {
 }
 
 
-.layout-horizontal {
+.layout-horizontal, .layout-sidebar {
     transition: all 0.3s ease;
 }
 
@@ -199,7 +199,13 @@ body.layout-sidebar {
 
 body {
 
-    background-color: var(--theme1-bg-primary);
+     background-image: url('../assets/images/home4.jpg'); 
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
     font-weight: var(--lora-weight-r);
     font-family: var(--font-primary);
     overflow-x: hidden;
@@ -226,11 +232,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--theme1-bg-secondary);
+    background: var(--bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--theme1-highlight);
+    background: var(--highlight);
     border-radius: 10px;
 }
 
@@ -719,7 +725,7 @@ header {
 /* styling user login view start */
 .navbar__user-name {
     margin-right: 1.5rem;
-    color: var(--text-primary);
+    color: var(--theme1-text-primary);
     font-size: var(--font-body);
     transition: all var(--transition-speed) ease;
     text-transform: capitalize;
@@ -732,5 +738,40 @@ header {
 
 }
 
+.layout-sidebar .login__welcome,
+.layout-sidebar .login__signup,
+.layout-sidebar .signup__welcome,
+.layout-sidebar .signup__login {
+    color: var(--Headings-gold);
+}
+
 
 /* styling user login view end  */
+
+/* footer styling start */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primary);
+    margin-top: 4rem;
+    
+}
+.footer__copyright {
+    color: var(--highlight);
+    font-family: var(--font-primary);
+    font-size: var(--font-h4);
+}
+
+.layout-sidebar footer {
+    width: calc(100% - 260px);
+    margin-left: 260px;
+}
+.layout-sidebar .footer__copyright {
+
+    color: var(--text-primary);
+}
+
+
+/* footer styling end */
+
