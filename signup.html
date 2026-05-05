@@ -190,8 +190,8 @@
                         <div class="signup__field">
                             <label class="signup__label">username</label>
 
-                            <div class="signup__email-wrapper">
-                                <input type="text" required placeholder="" class="signup__input signup__input--email"
+                            <div class="signup__username-wrapper">
+                                <input type="text" required placeholder="" class="signup__input signup__input--username"
                                     id="username" name="username">
                             </div>
 
@@ -205,38 +205,32 @@
 
 
                                 <div class="signup__field">
-                                    <div class="signup__row">
-                                        <div class="signup__group">
-                                            <label class="signup__label">Password</label>
 
+                                    <label class="signup__label">Password</label>
+                                    <div class="signup__password-wrapper">
+                                        <div class="login__group">
                                             <input type="password" name="password" placeholder=""
                                                 class="signup__input signup__input--password" id="password">
-
                                         </div>
-                                        <div class="signup__group">
-                                            <button type="button" class="signup__toggle" id="show-btn">
-                                                Show
-                                            </button>
-                                        </div>
+                                        <button type="button" class="signup__toggle" id="show-btn">
+                                            Show
+                                        </button>
                                     </div>
-
-
                                 </div>
 
-                                <div class="signup__field">
-                                    <div class="signup__row">
-                                        <div class="signup__group">
-                                            <label class="signup__label"> Verify Password</label>
 
+                            </div>
 
+                            <div class="signup__field">
 
-                                            <input type="password" required placeholder=""
-                                                class="signup__input signup__input--password" id="confirmPassword"
-                                                name="confirmPassword">
-                                        </div>
+                                <label class="signup__label"> Verify Password</label>
 
+                                <div class="signup__password-wrapper">
+                                    <div class="login__group">
+                                        <input type="password" required placeholder=""
+                                            class="signup__input signup__input--password" id="confirmPassword"
+                                            name="confirmPassword">
                                     </div>
-
 
                                 </div>
                                 <button class="signup__btn">

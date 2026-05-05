@@ -105,13 +105,13 @@
     --flex-direction: row;
     --navbar-mid-padding: 0.25rem 1rem;
     --justify-navbar-mid-content: space-between;
-    --content-margin-top: 9rem;
+    --content-margin-top: 10rem;
     --content-margin-left: auto;
     /*layout end*/
 
 
 
-    /* team work  */
+    /* team work colors  */
     --bg-secondary: #070812;
     --Headings-gold: #d8c18f;
     --bg-primary: #32385a;
@@ -122,7 +122,7 @@
 }
 
 body.layout-sidebar {
-
+    /* theme 2 colors  */
     --bg-primary: #d2cec7;
     --Headings-gold: #B8860B;
     --bg-secondary: #F6F1E9;
@@ -135,7 +135,7 @@ body.layout-sidebar {
 
 
 * {
-
+    /* reset step  */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -148,14 +148,10 @@ ul {
 
 /* standered styling  */
 h1,
-h2,
-h3,
-h4,
-h5,
+
 .navbar__link,
 .navbar__theme-label,
 .navbar__search-link,
-.section-title,
 .navbar__sub-title,
 .navbar__link--login {
 
@@ -170,8 +166,9 @@ a {
     text-decoration: none;
 }
 
-
-.layout-horizontal, .layout-sidebar {
+/* smoth transition betwean two themes */
+.layout-horizontal,
+.layout-sidebar {
     transition: all 0.3s ease;
 }
 
@@ -179,31 +176,25 @@ body.layout-sidebar {
 
     /*theme 2 Form Colors */
     --form-bg: var(--theme2-bg-secondary);
-    /* أو أي لون تختاره من اللي حددناهم */
     --form-border: #2F3B5B;
     --form-text: var(--theme2-text-primary);
     --form-placeholder: #61709B;
-    --form-focus-border: var(--theme2-Headings);
-    --form-focus-ring: rgba(48, 43, 33, 0.2);
-
-    /* Form Sizes */
-    --form-input-height: 3.25rem;
-    --form-padding-x: 1rem;
     --form-radius: 0.6rem;
     --form-gap: 1.2rem;
-    /* المسافة بين كل input والتاني */
+
     /*theme 2 end*/
 
 }
 
 
 body {
+    /* body bg insert  */
 
-     background-image: url('../assets/images/home4.jpg'); 
-    background-size:cover;
+    background-image: url('../assets/images/home4.jpg');
+    background-size: cover;
     background-attachment: fixed;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     font-weight: var(--lora-weight-r);
@@ -314,7 +305,7 @@ header {
 
     color: var(--theme1-highlight) !important;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: var(--font-h4) !important;
 
 
 }
@@ -384,7 +375,7 @@ header {
     font-weight: bold;
     transition: all 0.2s ease;
 
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: none !important;
     font-weight: 400 !important;
 
@@ -715,6 +706,7 @@ header {
 /* js error message styling start */
 .form__error {
     color: var(--text-primary);
+    font-family: var(--font-secondary);
     font-size: var(--font-small);
 
 }
@@ -755,8 +747,9 @@ footer {
     align-items: center;
     background-color: var(--bg-primary);
     margin-top: 4rem;
-    
+
 }
+
 .footer__copyright {
     color: var(--highlight);
     font-family: var(--font-primary);
@@ -767,6 +760,7 @@ footer {
     width: calc(100% - 260px);
     margin-left: 260px;
 }
+
 .layout-sidebar .footer__copyright {
 
     color: var(--text-primary);
@@ -774,4 +768,3 @@ footer {
 
 
 /* footer styling end */
-

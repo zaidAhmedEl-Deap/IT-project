@@ -56,13 +56,13 @@ body {
 .signup__form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+
 }
 
 /* field */
 .signup__field {
     text-align: left;
-
+    margin-top: 1rem;
 }
 
 
@@ -88,18 +88,31 @@ body {
 }
 
 /* focus */
-.signup__input:focus {
-    border: 1px solid var(--Headings-gold);
+.signup__input:focus-within {
+    border-color: var(--bg-primary);
+    scale: 1.01;
 }
 
 /* password wrapper */
-.signup__row {
+.signup__password-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
+.signup__password-wrapper .signup__input {
+    flex: 1;
+}
+
+.signup__input--password {
+    width: 300px;
+}
+
+.login__group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 /* show button */
 .signup__toggle {

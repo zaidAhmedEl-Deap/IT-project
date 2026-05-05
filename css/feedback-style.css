@@ -101,12 +101,14 @@ body {
     flex: 1;
     margin-left: 0.7rem;
     border-radius: var(--form-input-radius);
+    border: none;
     font-family: var(--font-secondary);
     background-color: var(--highlight);
     font-size: var(--font-h4);
     color: var(--text-primary);
     padding: var(--form-input-padding);
     cursor: pointer;
+    transition: all 0.3s ease;
 
 }
 
