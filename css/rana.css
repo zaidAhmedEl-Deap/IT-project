@@ -1,12 +1,4 @@
-body {
-    background-image: url('../assets/images/home4.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
+
 
 
 .contact__container {
@@ -26,6 +18,9 @@ body {
     width: 100%;
     margin-bottom: 2rem;
 }
+.layout-sidebar .contact__title {
+    color: var(--text-secondry);
+}
 
 .contact__paragraph {
 
@@ -35,7 +30,7 @@ body {
     border-radius: 8px;
     background-color: rgba(19, 18, 18, 0.596);
     text-align: center;
-    margin:0 2rem 4rem;
+    margin: 0 2rem 4rem;
     color: var(--highlight);
 
 }
@@ -43,7 +38,7 @@ body {
 .contact__form {
 
     width: 100%;
-    
+
 
 }
 
@@ -91,6 +86,7 @@ body {
     gap: 3rem;
     font-size: var(--font-h4);
     font-family: var(--font-secondary);
+    margin: 0 4rem;
 }
 
 .contact-form__choose {
@@ -127,7 +123,7 @@ body {
     margin-bottom: 20px;
     font-size: 16px;
     border-radius: 8px;
-    border: 3px solid var(--bg-primary);
+    border: 2px solid var(--bg-primary);
     outline: none;
     transition: all 0.3s ease;
     resize: none;
@@ -143,28 +139,28 @@ body {
 .contact-form__buttons {
 
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    margin: 0 2rem;
 }
 
 .contact-form__button {
+    flex: 1;
 
-    display: inline-block;
     font-family: var(--font-secondary);
     background: var(--highlight);
     color: var(--text-primary);
-   
+
     padding: var(--form-input-padding);
     font-size: var(--font-h4);
     border: none;
-    border-radius:  var(--form-input-radius);
+    border-radius: var(--form-input-radius);
     cursor: pointer;
-   margin-left: 0.7rem;
+    margin-left: 0.7rem;
     transition: 0.3s;
 }
 
 .contact-form__button:hover {
 
-   opacity: 0.8;
-   
+    opacity: 0.8;
+
 }
