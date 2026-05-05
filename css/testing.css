@@ -1,93 +1,148 @@
-/* الفايل ده معمول عشان تشوفو الشغل ماشي ازاي  */
-
-
-.login__form login__container{
-
-    padding: 2rem;
-    background-color: var(--bg-secondary);
-    border-radius: var(--form-radius);}
-
-.login__container {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+    background-image: url('../assets/images/home4.jpg'); 
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
 }
 
-.login__welcome {
 
-    font-size: var(--font-h1);
-    color: var(--Headings-gold);
 
+/* container */
+.signup__container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: var(--card-padding);
+    background-color: var(--form-bg);
+    border-radius: var(--form-radius);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.login__title {
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+/* welcome */
+.signup__welcome {
+    font-size: var(--font-small);
+    color: var(--text-secondry);
+    margin-bottom: 0.5rem;
+}
+
+/* title */
+.signup__title {
     font-size: var(--font-h2);
     color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
-.login__label {
-
-    color: var(--text-primary);
+/* form */
+.signup__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.login__input {
+/* field */
+.signup__field {
+    text-align: left;
+}
 
-    background-color: transparent;
+/* label */
+.signup__label {
+    font-size: var(--font-small);
+    color: var(--Headings-gold);
+    margin-bottom: 5px;
+    display: block;
+}
 
-    padding: 0.5rem;
-    width: 90%;
-    border-radius: var(--form-radius);
-    outline: none;
+/* input */
+.signup__input {
+    width: var(--form-input-width);
+    padding: var(--form-input-padding);
+    border-radius: var(--form-input-radius);
+    border: 1px solid var(--form-border);
+    outline: var(--form-input-outline);
+    background-color: var(--form-bg);
+    color: var(--form-text);
+    transition: var(--transition-speed);
+}
+
+/* focus */
+.signup__input:focus {
     border: 1px solid var(--Headings-gold);
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-    font-family: var(--font-secondary);
 }
 
-.login__input:focus-within {
-    outline: none;
+/* password wrapper */
+.signup__password-wrapper {
+    display: flex;
+}
+
+.signup__password-wrapper .signup__input {
+    flex: 1;
+}
+
+/* show button */
+.signup__toggle {
+    padding: var(--form-input-padding);
+    background-color: var(--highlight);
+    color: var(--text-primary);
+    border: none;
+    border-radius: var(--form-input-radius);
+    cursor: pointer;
+    margin-left: 0.7rem;
+}
+
+.signup__toggle:hover {
+    opacity: 0.8;
+}
+
+
+
+/* button */
+.signup__btn {
+    padding: var(--btn--padding);
+    border: none;
+    border-radius: var(--btn-radius);
+    background-color: var(--highlight);
+    color: var(--text-primary);
+    font-size: var(--font-small);
+    cursor: pointer;
+    transition: var(--transition-speed);
+    margin-top: 1rem;
     width: 100%;
 }
 
-.login__toggle {
-
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    background-color: var(--bg-primary);
-    color: var(---text-primary);
-    cursor: pointer;
-    outline: none;
-    border: none;
-    padding: 0.25rem 2rem;
-    border-radius: var(--form-radius);
-    transition: all 0.2s ease;
-    font-family: var(--font-primary);
+.signup__btn:hover {
+    opacity: 0.85;
 }
 
-.login__toggle:hover {
-    scale: 1.01;
-    background: var(--bg-secondary);
-    color: var(--bg-secondary);
+/* signup */
+.signup__login {
+    margin-top: 1rem ;
+    font-size: var(--font-small);
+    color: var(--text-secondry);
+    text-align: center;
 }
 
-.login__signup {
-
-    color: var(--Headings-gold);
+.signup__link {
+    color: var(--highlight);
+    text-decoration: none;
 }
 
-.login__link {
-
-    color: var(--text-primary);
-    text-shadow: 1px;
-}
-.login {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+.signup__link:hover {
+    text-decoration: underline;
 }

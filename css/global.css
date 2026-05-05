@@ -8,7 +8,7 @@
     --theme1-bg-primary: #32385a;
     --theme1-text-primary: #B7C5E1;
     --theme1-text-secondry: #61709B;
-    --theme1-highlight: #915a08;
+    --theme1-highlight: #c77b08;
     /*theme1 colors end */
 
     /*theme 2 start*/
@@ -55,7 +55,7 @@
     --btn--padding: 0.75rem;
     --btn-padding-x: 1.5rem;
     --btn--width: 12rem;
-    --btn-radius: 1.6rem;
+    --btn-radius: 0.6rem;
     --radius-main: 0.5rem;
 
     /*section padding  */
@@ -76,7 +76,7 @@
 
 
     /*theme 1 Form Colors */
-    --form-bg: var(--theme1-bg-secondary);
+    --form-bg: var(--bg-secondary);
     /* أو أي لون تختاره من اللي حددناهم */
     --form-border: #2F3B5B;
     --form-text: var(--theme1-text-primary);
@@ -105,36 +105,37 @@
     --flex-direction: row;
     --navbar-mid-padding: 0.25rem 1rem;
     --justify-navbar-mid-content: space-between;
-    --content-margin-top: 9rem;
+    --content-margin-top: 10rem;
     --content-margin-left: auto;
     /*layout end*/
 
 
 
-    /* team work  */
+    /* team work colors  */
     --bg-secondary: #070812;
     --Headings-gold: #d8c18f;
     --bg-primary: #32385a;
     --text-primary: #B7C5E1;
     --text-secondry: #61709B;
-    --highlight: #915a08;
+    --highlight: #c77b08;
     /* team work  */
 }
 
 body.layout-sidebar {
-
-    --bg-primary: #CC983B;
-    --Headings: #5E2A0B;
-    --bg-secondary: #E8C049;
-    --text-primary: #1A0604;
+    /* theme 2 colors  */
+    --bg-primary: #d2cec7;
+    --Headings-gold: #B8860B;
+    --bg-secondary: #F6F1E9;
+    --text-primary: #2C2C2C;
     --bars-bg: #300b08;
-    --text-secondary: #61709B;
-    --highlight: #968b7e;
+    --text-secondry: #FFD700;
+    --highlight: #E67E22;
+    --form-bg: #E8C049;
 }
 
 
 * {
-
+    /* reset step  */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -147,14 +148,10 @@ ul {
 
 /* standered styling  */
 h1,
-h2,
-h3,
-h4,
-h5,
+
 .navbar__link,
 .navbar__theme-label,
 .navbar__search-link,
-.section-title,
 .navbar__sub-title,
 .navbar__link--login {
 
@@ -169,8 +166,9 @@ a {
     text-decoration: none;
 }
 
-
-.layout-horizontal {
+/* smoth transition betwean two themes */
+.layout-horizontal,
+.layout-sidebar {
     transition: all 0.3s ease;
 }
 
@@ -178,32 +176,32 @@ body.layout-sidebar {
 
     /*theme 2 Form Colors */
     --form-bg: var(--theme2-bg-secondary);
-    /* أو أي لون تختاره من اللي حددناهم */
     --form-border: #2F3B5B;
     --form-text: var(--theme2-text-primary);
     --form-placeholder: #61709B;
-    --form-focus-border: var(--theme2-Headings);
-    --form-focus-ring: rgba(48, 43, 33, 0.2);
-
-    /* Form Sizes */
-    --form-input-height: 3.25rem;
-    --form-padding-x: 1rem;
     --form-radius: 0.6rem;
     --form-gap: 1.2rem;
-    /* المسافة بين كل input والتاني */
+
     /*theme 2 end*/
 
 }
 
 
 body {
+    /* body bg insert  */
 
-    background-color: var(--theme1-bg-primary);
+    background-image: url('../assets/images/home4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
     font-weight: var(--lora-weight-r);
     font-family: var(--font-primary);
     overflow-x: hidden;
     max-width: 100vw;
-    
+
 
 }
 
@@ -225,11 +223,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--theme1-bg-secondary);
+    background: var(--bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--theme1-highlight);
+    background: var(--highlight);
     border-radius: 10px;
 }
 
@@ -294,7 +292,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 0.25rem 0;
+    padding: 0.2rem 2rem;
     background-color: var(--theme1-bg-primary);
 }
 
@@ -307,7 +305,7 @@ header {
 
     color: var(--theme1-highlight) !important;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: var(--font-h4) !important;
 
 
 }
@@ -377,7 +375,7 @@ header {
     font-weight: bold;
     transition: all 0.2s ease;
 
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: none !important;
     font-weight: 400 !important;
 
@@ -591,6 +589,11 @@ header {
     display: none;
 }
 
+.layout-sidebar .navbar__theme-label {
+
+    color: var(--bg-secondary);
+}
+
 
 .layout-sidebar .navbar__theme-select {
 
@@ -617,6 +620,10 @@ header {
     background-color: var(--theme2-bg-secondry);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
+}
+
+.layout-sidebar .navbar__top {
+    background-color: var(--theme2-bars-bg);
 }
 
 .layout-sidebar .sidebar__title-container {
@@ -679,7 +686,7 @@ header {
 }
 
 .layout-sidebar .navbar__search,
-.layout-sidebar .navbar__top {
+.layout-sidebar .navbar__mid {
 
     display: none;
 }
@@ -691,7 +698,73 @@ header {
 
     margin-left: 260px;
     width: calc(100% - 260px);
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 /*sidebar theme end */
+
+/* js error message styling start */
+.form__error {
+    color: var(--text-primary);
+    font-family: var(--font-secondary);
+    font-size: var(--font-small);
+
+}
+
+
+/* js error message styling end */
+
+/* styling user login view start */
+.navbar__user-name {
+    margin-right: 1.5rem;
+    color: var(--theme1-text-primary);
+    font-size: var(--font-body);
+    transition: all var(--transition-speed) ease;
+    text-transform: capitalize;
+    font-family: var(--font-secondary);
+    border-bottom: 1px solid var(--Headings-gold);
+}
+
+#nav-logout-btn {
+    color: var(--highlight);
+
+}
+
+.layout-sidebar .login__welcome,
+.layout-sidebar .login__signup,
+.layout-sidebar .signup__welcome,
+.layout-sidebar .signup__login {
+    color: var(--Headings-gold);
+}
+
+
+/* styling user login view end  */
+
+/* footer styling start */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primary);
+    margin-top: 4rem;
+
+}
+
+.footer__copyright {
+    color: var(--highlight);
+    font-family: var(--font-primary);
+    font-size: var(--font-h4);
+}
+
+.layout-sidebar footer {
+    width: calc(100% - 260px);
+    margin-left: 260px;
+}
+
+.layout-sidebar .footer__copyright {
+
+    color: var(--text-primary);
+}
+
+
+/* footer styling end */

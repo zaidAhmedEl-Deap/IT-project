@@ -25,30 +25,31 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/feedback-style.css">
     <style>
-        .success-page__container{
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-             text-align: center;
-             line-height: 50px;
+        .success-page__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 50px;
         }
-        .success-page__title{
-             font:50px var(--font-primary);
-             color: var(--theme1-Headings-gold);
-        }
-        .success-page__paragraph {
-             font:20px var(--font-secondary);
-             line-height: 40px;
-             color:var(--text-primary);
-             
-        } 
-        @media(max-width:768px)
-        {
-            .success-page__paragraph {
-              font-size: 15px;
-            }
-        }  
 
+        .success-page__title {
+            font: 50px var(--font-primary);
+            color: var(--theme1-Headings-gold);
+        }
+
+        .success-page__paragraph {
+            font: 20px var(--font-secondary);
+            line-height: 40px;
+            color: var(--text-primary);
+
+        }
+
+        @media(max-width:768px) {
+            .success-page__paragraph {
+                font-size: 15px;
+            }
+        }
     </style>
 
 </head>
@@ -147,17 +148,7 @@
                             <li class="sidebar__item"><a href="./contact.html" class="sidebar__link"> <i
                                         class="fa-solid fa-message sidebar__icon"></i><span
                                         class="sidebar__link-text">Contact-us</span></a></li>
-                            <li class="sidebar__item" id="sidebar-auth-item">
-                                <a href="./login.html" class="sidebar__link" id="sidebar-login-link">
-                                    <i class="fa-solid fa-right-to-bracket sidebar__icon"></i>
-                                    <span class="sidebar__link-text">Login</span>
-                                </a>
 
-                                <a href="#" class="sidebar__link" id="sidebar-logout-link" style="display: none;">
-                                    <i class="fa-solid fa-arrow-right-from-bracket sidebar__icon"></i>
-                                    <span class="sidebar__link-text">Logout</span>
-                                </a>
-                            </li>
                         </ul>
 
         </div>
@@ -203,13 +194,15 @@
                 <div class="success-page__group">
                     <h2 class="success-page__title">Thank You!</h2>
                 </div>
-                <div class="success-page__group" style="font-size: 100px; color:#2ecc71; margin-bottom: 20px; text-shadow: 0 0 10px rgba(46,204,113,0.5);">
+                <div class="success-page__group"
+                    style="font-size: 100px; color:#2ecc71; margin-bottom: 20px; text-shadow: 0 0 10px rgba(46,204,113,0.5);">
                     <i class="fa-solid fa-check"></i>
                 </div>
                 <div class="success-page__group">
                     <p class="success-page__paragraph">Thanks a bunch for filling that out.</p>
                     <p class="success-page__paragraph">It means a lot to us, just like you do!</p>
-                    <p class="success-page__paragraph">We really appreciate you giving us a moment of your time today.</p>
+                    <p class="success-page__paragraph">We really appreciate you giving us a moment of your time today.
+                    </p>
                     <p class="success-page__paragraph">Thanks for being you.</p>
                 </div>
             </section>

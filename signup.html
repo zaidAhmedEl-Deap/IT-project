@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
 
 </head>
@@ -123,17 +124,7 @@
                             <li class="sidebar__item"><a href="./contact.html" class="sidebar__link"> <i
                                         class="fa-solid fa-message sidebar__icon"></i><span
                                         class="sidebar__link-text">Contact-us</span></a></li>
-                            <li class="sidebar__item" id="sidebar-auth-item">
-                                <a href="./login.html" class="sidebar__link" id="sidebar-login-link">
-                                    <i class="fa-solid fa-right-to-bracket sidebar__icon"></i>
-                                    <span class="sidebar__link-text">Login</span>
-                                </a>
 
-                                <a href="#" class="sidebar__link" id="sidebar-logout-link" style="display: none;">
-                                    <i class="fa-solid fa-arrow-right-from-bracket sidebar__icon"></i>
-                                    <span class="sidebar__link-text">Logout</span>
-                                </a>
-                            </li>
                         </ul>
 
         </div>
@@ -175,114 +166,91 @@
     <main class="main__content">
         <div class="main__content-container">
             <div class="signup__container">
-                <h1 class="signup__welcome">
-                    Begin Your Adventure
 
-                </h1>
-                <p class="signup__description">
-                    Ready for Player One? Sign up to start your journey, earn achievements, and dominate the leaderboard
+
+
+
+
+                <p class="signup__welcome">
+                    Begin Your Adventure! create an account
                 </p>
 
-                <form class="signup__form">
 
-                     <h2 class="signup__title"> SIGN UP </h2>
-
-                    <div class="signup__feild">
-                        <label class="signup__lable">Full Name:</label>
-
-                        <div class="signup__fullname-wrapper"></div>
-                        <input 
-                        type="text"
-                        required 
-                        placeholder="Full Name"
-                        class="signup__input signup__input--fullname">
-                    </div>
+                <h2 class="signup__title">sign-up</h2>
 
 
+                <form class="signup__form" id="signup-form" name="signup-form">
+                    <div class="signup__field">
+                        <label class="signup__label">FullName</label>
 
-                    <div class="signup__feild">
-                        <label class="signup__lable">Username:</label>
+                        <div class="signup__name-wrapper" id="name">
+                            <input type="text" name="fullname" placeholder="" class="signup__input signup__input--name">
+                        </div>
 
-                        <div class="signup__username-wrapper"></div>
-                        <input 
-                        type="text"
-                        required 
-                        placeholder="username"
-                        minlength="6"
-                        class="signup__input signup__input--username">
-                    </div>
+                        <div class="signup__field">
+                            <label class="signup__label">username</label>
 
+                            <div class="signup__username-wrapper">
+                                <input type="text" required placeholder="" class="signup__input signup__input--username"
+                                    id="username" name="username">
+                            </div>
 
+                            <div class="signup__field">
+                                <label class="signup__label">Email</label>
 
-
-                    <div class="signup__feild">
-                        <label class="signup__lable">Email:</label>
-
-                        <div class="signup__email-wrapper"></div>
-                        <input 
-                        type="email"
-                        required 
-                        placeholder="email"
-                        class="signup__input signup__input--email">
-                    </div>
-  
+                                <div class="signup__email-wrapper">
+                                    <input type="email" required placeholder=""
+                                        class="signup__input signup__input--email" id="userEmail" name="userEmail">
+                                </div>
 
 
-                    <div class="signup__feild">
-                        <label class="signup__lable">password:</label>
+                                <div class="signup__field">
 
-                        <div class="signup__password-wrapper"></div>
-                        <input 
-                        type="password"
-                        required 
-                        placeholder="ctrate a strong password"
-                        minlength="8"
-                        class="signup__input signup__input--password">
-                    </div>
+                                    <label class="signup__label">Password</label>
+                                    <div class="signup__password-wrapper">
+                                        <div class="login__group">
+                                            <input type="password" name="password" placeholder=""
+                                                class="signup__input signup__input--password" id="password">
+                                        </div>
+                                        <button type="button" class="signup__toggle" id="show-btn">
+                                            Show
+                                        </button>
+                                    </div>
+                                </div>
 
 
+                            </div>
 
-                    <div class="signup__feild">
-                        <label class="signup__lable">Verify Password:</label>
+                            <div class="signup__field">
 
-                        <div class="signup__vpassword-wrapper"></div>
-                        <input 
-                        type="password"
-                        required 
-                        placeholder="Verify your secret key"
-                        minlength="8"
-                        class="signup__input signup__input--vpassword">
-                    </div>
+                                <label class="signup__label"> Verify Password</label>
 
-                    
+                                <div class="signup__password-wrapper">
+                                    <div class="login__group">
+                                        <input type="password" required placeholder=""
+                                            class="signup__input signup__input--password" id="confirmPassword"
+                                            name="confirmPassword">
+                                    </div>
 
-                    <div class="signup__options">
-
-                        <label class="signup__terms">
-                        <input type="checkbox" class="signup__checkbox" required>
-                        I agree to the Terms of War and Privacy Policy
-                        </label>
-                    </div>
-
-                    <div class="signup__feild">
-                        <button type="submit" class="signup__toggle">Spawn Now!</button>
-
-                    </div>
-
-                    <div class="signup__login-link">
-                        <p class="signup__text">
-                            Already a member?
-                            <a href="login.html" class="signup__link">Sign In</a>
-                        </p>
-                    </div>
+                                </div>
+                                <button class="signup__btn">
+                                    Sign up
+                                </button>
 
                 </form>
 
-            </div>
 
+                <p class="signup__login">
+                    Already a member?
+                    <a href="login.html" class="signup__link">Sign In</a>
+                </p>
+
+
+
+            </div>
         </div>
     </main>
-    </div>
+
     <!-- main end -->
 
 
@@ -291,7 +259,10 @@
     <footer>
         <p class="footer__copyright">IT Team يارب نعدي &copy; </p>
     </footer>
+
+    <script src="./Js/signup.js"></script>
     <script src="./Js/main.js"></script>
+
 </body>
 
 </html>
